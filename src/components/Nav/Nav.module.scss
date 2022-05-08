@@ -5,16 +5,21 @@
   display: flex;
 }
 .boundless__white {
-  background-color: wheat;
+  background-color: rgb(255, 255, 255);
 }
 
 .boundless__black {
   background-color: black;
 }
+
+
+
 .navbar1 {
   display: flex;
-  height: 40px;
+  height: 50px;
   align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
   .logo {
     flex: 1 1 0;
     font-size: 28px;
@@ -22,12 +27,26 @@
 
   & .list1 {
     justify-content: space-between;
-    width: 500px;
+    width: 600px;
+    // background-color: aqua;
+    
     // background-color: aquamarine;
-    .phone {
+    & .phone {
+      position: relative;
+      margin-right: 25px;
       & a {
         font-size: 18px;
         color: rgb(76, 73, 73);
+      }
+      & span {
+        position: absolute;
+        bottom: 3px;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 5px;
+        color: rgb(84, 84, 234);
+        cursor: pointer;
+        // background-color: rgb(255, 255, 255);
       }
       & div {
         color: rgb(182, 175, 175);
@@ -36,21 +55,59 @@
       }
     }
 
-    & li {
-      // background-color: grey;
-      // padding: 0 3rem;
+    & .bottom__borders {
+      // padding-bottom: .3rem;
+      border-bottom: 2px solid rgb(0, 0, 0);
+      & button {
+        background-color: rgb(255, 255, 255);
+        font-size: 18px;
+      }
     }
+    
+    & .user {
+      width: 90px;
+      // background-color: red;
+      display: flex;
+      justify-content: space-between;
+      & a {
+        font-size: 20px;
+        color: black;
+      }
+      // background-color: blueviolet;
+    }
+    
 
     & li input {
-      border-bottom: 2px solid black;
+      font-size: 14px;
+      // border-bottom: 2px solid black;
     }
 
   }
 }
 
-.list2 {
 
-  .navbar2 {
+.list2 {
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  text-transform: uppercase;
+
+  padding-right: 10px;
+  padding-left: 10px;
+  & .collect1 {
+    width: 520px;
     display: flex;
+    justify-content: space-between;
+  }
+  & li a {
+    color: white;
+    font-size: 14px;
+  }
+  .collect2 {
+    display: flex;
+    & li a {
+      padding-left: 2.5rem;
+    }
   }
 }
+
