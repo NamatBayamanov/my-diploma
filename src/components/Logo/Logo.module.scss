@@ -1,0 +1,26 @@
+.logo {
+  color: rgb(0, 0, 0);
+  position: relative;
+  & h2 {
+    & a {
+      color: black;
+    }
+
+  }
+
+  & span {
+    cursor: pointer;
+    position: absolute;
+    // top: 23px;
+    bottom: -12px;
+    left: 27px;
+    display: inline-block;
+    font-size: 10px;
+    // text-align: center;
+    background-color: aqua;
+
+    padding: .2rem;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

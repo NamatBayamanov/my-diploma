@@ -1,0 +1,56 @@
+.Nav {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.list {
+  display: flex;
+}
+.boundless__white {
+  background-color: wheat;
+}
+
+.boundless__black {
+  background-color: black;
+}
+.navbar1 {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  .logo {
+    flex: 1 1 0;
+    font-size: 28px;
+  }
+
+  & .list1 {
+    justify-content: space-between;
+    width: 500px;
+    // background-color: aquamarine;
+    .phone {
+      & a {
+        font-size: 18px;
+        color: rgb(76, 73, 73);
+      }
+      & div {
+        color: rgb(182, 175, 175);
+        text-align: center;
+        font-size: 11px;
+      }
+    }
+
+    & li {
+      // background-color: grey;
+      // padding: 0 3rem;
+    }
+
+    & li input {
+      border-bottom: 2px solid black;
+    }
+
+  }
+}
+
+.list2 {
+
+  .navbar2 {
+    display: flex;
+  }
+}
