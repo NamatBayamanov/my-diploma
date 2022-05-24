@@ -1,4 +1,3 @@
-import CarouselBox from "../../components/CarouselBox/CarouselBox";
 import classes from "./Smartphones.module.scss";
 
 
@@ -12,7 +11,6 @@ function Smartphones() {
             <div className={classes.content}>
               Smartphones
             </div>
-            <CarouselBox/>
           </div>
         </div>
       </div>
