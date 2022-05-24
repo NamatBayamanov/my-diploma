@@ -5,8 +5,16 @@ import { FaUserAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import { useState } from "react";
 
 function Nav() {
+
+  const [actives, setActives] = useState(false);
+
+  function onToggle() {
+    setActives(!actives);
+  };
+
   return (
     <>
       <nav className={classes.Nav}>
@@ -15,6 +23,7 @@ function Nav() {
         <div className={classes.boundless__white}>
           <div className="container">
             <div className={classes.navbar1}>
+
               <div className={classes.logo}>
                 <Logo />
               </div>
@@ -40,10 +49,10 @@ function Nav() {
                     <button>
                       <FaSistrix/>
                     </button>
-
                   </div>
                   
                 </li>
+
 
                 <li>
                   <div className={classes.user}>
@@ -60,9 +69,15 @@ function Nav() {
                   
                 </li>
               </ul>
+
+
+              <div className={`${classes.burger} ${actives ? `${classes.active}` : "" }`} onClick={onToggle}>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
+
 
 
         <div className={classes.boundless__black}>

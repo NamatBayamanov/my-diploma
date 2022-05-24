@@ -8,6 +8,7 @@ function App() {
       <>
         <Nav/>
         <Header/>
+        <Brands/>
         <Footer/>
       </>
     </div>
