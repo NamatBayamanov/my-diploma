@@ -1,5 +1,5 @@
 import classes from "./Brands.module.scss";
-
+import { FaApple } from "react-icons/fa";
 
 function Brands() {
   return ( 
@@ -10,7 +10,38 @@ function Brands() {
             <ul>  
               <li>
                 <a href="/">
-                  
+                  <FaApple/>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  MEIZU
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  honor
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span>
+                    MI
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span>
+                    SAMSUNG
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span>
+                    SONY
+                  </span>
                 </a>
               </li>
             </ul>

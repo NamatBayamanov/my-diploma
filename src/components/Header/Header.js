@@ -8,13 +8,14 @@ function Header() {
   return ( 
     <>  
       <div className={classes.Header}>
+
         <div className="container">
           
           <div className={classes.header__flex}>
 
-          <div className={classes.image1}>
-            <img src={headerImage} alt="#"/>
-          </div>
+            <div className={classes.image1}>
+              <img src={headerImage} alt="#"/>
+            </div>
 
 
 

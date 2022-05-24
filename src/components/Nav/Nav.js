@@ -1,4 +1,4 @@
-import Logo from "../Logo/Logo";
+import Logo from "../ui/Logo/Logo";
 import classes from "./Nav.module.scss";
 import { FaSistrix } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
@@ -6,6 +6,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
+import NavItem from "./NavItem/NavItem";
 
 function Nav() {
 
@@ -85,29 +86,19 @@ function Nav() {
             <ul className={`${classes.list2} ${classes.list}  `}>
 
             <div className={classes.collect1}>
-              <li>
-                  <a href="/">
-                    Smartphones
-                  </a>
-                </li>
+              <NavItem url="smartphones">
+                Smartphones
+              </NavItem>
 
-                <li>
-                  <a href="/">
-                    Accessories
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/">
-                    Covers
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/">
-                    Headphones
-                  </a>
-                </li>
+              <NavItem url="accessories">
+                Accessories
+              </NavItem>
+              <NavItem url="covers">
+                Covers
+              </NavItem>
+              <NavItem url="headphones">
+                Headphones
+              </NavItem>
 
             </div>
 
@@ -115,18 +106,12 @@ function Nav() {
 
 
               <div className={classes.collect2}>
-
-                <li>
-                  <a href="/">
-                    Delivery
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/">
-                    Warranty
-                  </a>
-                </li>
+              <NavItem url="delivery">
+                Delivery
+              </NavItem>
+              <NavItem url="warranty">
+                Warranty
+              </NavItem>
 
               </div>
 
