@@ -1,0 +1,60 @@
+.Smartphones {
+  padding-top: 1rem;
+}
+.smartphones__flex {
+  display: flex;
+  // background-color: red;
+}
+.image1 {
+  flex: 0 0 61%;
+  padding: 0.5rem;
+
+  // background-color: blue;
+  & img {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.content {
+  // background-color: green;
+  // display: flex;
+  // flex-direction: column;
+  // flex: 0 0 50%;
+  & .watch {
+    // background-color: red;
+    display: flex;
+    & .image2 {
+      // background-color: chocolate;
+
+      max-width: 50%;
+      padding: 0.5rem;
+      & img {
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  
+    & .image3 {
+      max-width: 50%;
+      padding: 0.5rem;
+      & img {
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  }
+
+  
+    .image4 {
+      max-width: 100%;
+      padding: 0.5rem;
+      // background-color: aquamarine;
+      & img {
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  
+}
+

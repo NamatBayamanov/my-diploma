@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Accessories from "./pages/Accessories/Accessories";
-import Covers from "./pages/Covers/Covers";
+import Accessories from "./pages/Stickers/Stickers";
+import Covers from "./pages/Cases/Cases";
 import Delivery from "./pages/Delivery/Delivery";
 import Headphones from "./pages/Headphones/Headphones";
 import Smartphones from "./pages/Smartphones/Smartphones";
@@ -13,11 +13,11 @@ function App() {
       <>
         <Layout>
           <Routes>
-            <Route path="smartphones" element={<Smartphones/>}/>
+            <Route path="/" element={<Smartphones/>}/>
 
-            <Route path="accessories" element={<Accessories/>}/>
+            <Route path="stickers" element={<Accessories/>}/>
 
-            <Route path="covers" element={<Covers/>}/>
+            <Route path="cases" element={<Covers/>}/>
 
             <Route path="headphones" element={<Headphones/>}/>
 
