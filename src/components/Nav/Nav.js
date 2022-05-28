@@ -86,14 +86,14 @@ function Nav() {
             <ul className={`${classes.list2} ${classes.list}  `}>
 
             <div className={classes.collect1}>
-              <NavItem url="/">
+              <NavItem url="/"  >
                 Smartphones
               </NavItem>
 
               <NavItem url="stickers">
                 Stickers
               </NavItem>
-              <NavItem url="cases">
+              <NavItem url="cases" active>
                 Cases
               </NavItem>
               <NavItem url="headphones">

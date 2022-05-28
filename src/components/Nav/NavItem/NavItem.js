@@ -3,16 +3,23 @@ import classes from "./NavItem.module.scss";
 
 
 
-function NavItem({url, children}) {
+function NavItem({url, children, active}) {
+
+  // const classNames = [];
+
+  
+    // active = "active";
+
+
+  // className={`${active ? `${classes.active}` : ""}`}
+
   return ( 
     <>
-      <div className={classes.NavItem}>
-        <li>
-          <NavLink to={url}>
+        <li className={classes.NavItem}>
+          <NavLink to={url} active={active}>
             {children}
           </NavLink>
         </li>         
-      </div>
     </>
   );
 }

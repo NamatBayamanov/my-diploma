@@ -8,10 +8,11 @@ import chargingImage from "../../assets/charging.jpg";
 import headphonesImage from "../../assets/headphones.jpg";
 
 import stickersImage from "../../assets/stickers.jpg";
+import casesImage from "../../assets/cases.jpg";
 
-import smileImage from "../../assets/smile.jpg";
 
-function Header({image, children, title, text}) {
+
+function Header({image, children, title, text, image2, image3}) {
 
 
   return ( 
@@ -19,39 +20,23 @@ function Header({image, children, title, text}) {
       <div className={classes.Header}>
         <div className={classes.background}>
           <div className="container">
-
-            <div className={classes.content}>
-
-              <div className={classes.over__img}>
-
-                  <div className={classes.text__container}>
-                        {text}
-                  </div>
-
-
-
-                  <div className={classes.over__img_container}>
-                    <div className={classes.width__img}>
-                      <img src={smileImage} alt="#"/>
-                    </div>
+            <article className={classes.content}>
+              <div className={classes.img__container}>
+                <img src={image} alt="#"/>
+              </div>
+              <p>
+                <p>
+                {children}
+                </p>
+                <span>
+                  &nbsp;
+                </span>
+                <aside>
                   
-                    
-                </div>
-              </div>
+                </aside>
+              </p>
+            </article>
 
-              <div className={classes.below__img}>
-                <div className={classes.img__container}>
-                  <img src={image} alt="#"/>
-                  <div className={classes.note}>
-                    Could you hover me please.?<br/>
-                    <mark>
-                    And maybe you will see something...
-                    </mark>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
           </div>
         </div>
       </div>
