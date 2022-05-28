@@ -48,7 +48,7 @@ function Smartphones() {
             </div>
 
 
-          <ProductList products={getProducts} />
+          <ProductList products={getProducts()} />
           </div>
         </div>
 

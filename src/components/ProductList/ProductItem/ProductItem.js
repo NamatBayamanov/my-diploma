@@ -1,20 +1,32 @@
 import classes from "./ProductItem.module.scss";
-
 import { Link } from "react-router-dom";
 
 function ProductItem({product}) {
+
+  console.log(product);
   return ( 
     <>
       <div className={classes.ProductItem}>
-        <aside>
-          {product.action}
-        </aside>
-        <div className={classes.img__container}>
-          <img src={product.image} alt="#"/>
+        <div className={classes.aside}>
+          <aside>
+            {product.action}
+          </aside>
         </div>
+        
+
+        <div className={classes.centre}>
+          <div className={classes.img__container}>
+            <Link to={"/smartphones/" + product.productId}>
+              <img src={product.image} alt="#"/></Link>
+          </div>
+        </div>
+
+        
         <h2>
           {product.title}
         </h2>
+        <div className={classes.together}>
+
         <div className={classes.rating}>
           <span>
             <img src={product.rating1} alt="#"/>
@@ -36,16 +48,25 @@ function ProductItem({product}) {
           </article>
         </div>
 
-        <div>
-          <Link to={product.productId}> To move </Link>
+
+        <div className={classes.link}>
+          <Link to={"/smartphones/" + product.productId}> To move </Link>
         </div>
 
+          
+        </div>
+
+        
+
+        
         <ul>
           <li className={classes.price}>
-            {product.price}
+            ${product.price}
           </li>
           <li className={classes.cart}>
-            {product.cart}
+            <Link to={"/smartphones/" + product.productId}>
+              {product.cart}
+            </Link>
           </li>
         </ul>
         
