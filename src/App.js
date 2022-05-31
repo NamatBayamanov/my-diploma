@@ -4,8 +4,10 @@ import Accessories from "./pages/Stickers/Stickers";
 import Covers from "./pages/Cases/Cases";
 import Delivery from "./pages/Delivery/Delivery";
 import Headphones from "./pages/Headphones/Headphones";
-import Smartphones from "./pages/Smartphones/Smartphones";
+import Home from "./pages/Home/Home";
 import Warranty from "./pages/Warranty/Warranty";
+import Products from "./pages/Products/Products";
+import Product from "./pages/Products/Product/Product";
 
 function App() {
   return (
@@ -13,11 +15,13 @@ function App() {
       <>
         <Layout>
           <Routes>
-            <Route path="/" element={<Smartphones/>}/>
+            <Route path="/" element={<Home/>}/>
 
             <Route path="stickers" element={<Accessories/>}/>
 
-            <Route path="cases" element={<Covers/>}/>
+            <Route path="/products" element={<Products/>}/>
+
+            <Route path="/products:productId" element={<Product/>}/>
 
             <Route path="headphones" element={<Headphones/>}/>
 

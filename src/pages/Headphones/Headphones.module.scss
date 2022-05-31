@@ -62,9 +62,11 @@
 
 .Headphones article p:hover span {
   transform: rotateY(360deg);
+  
 }
 .Headphones article p:hover aside {
   transform: rotateY(180deg);
+  
 }
 
 
@@ -115,6 +117,8 @@
 
 
   backface-visibility: hidden;
+
+  
 }
 
 // .Headphones article p span:hover {

@@ -17,7 +17,7 @@ function ProductItem({product}) {
         <div className={classes.centre}>
           <div className={classes.img__container}>
             <Link to={"/smartphones/" + product.productId}>
-              <img src={product.image} alt="#"/></Link>
+              <img src={product.image} alt="#" /></Link>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ function ProductItem({product}) {
 
 
         <div className={classes.link}>
-          <Link to={"/smartphones/" + product.productId}> To move </Link>
+          <Link to={"/products/" + product.productId}> To move </Link>
         </div>
 
           
