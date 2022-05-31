@@ -11,12 +11,14 @@ function Layout({children}) {
       <main className={classes.Layout}>
         
         <Nav/>
+        <Brands />
+
         <div className={classes.content} id="Layout">
           {children}
         </div>
 
         
-        <Brands />
+        
         <Footer/>
       </main>
     </>

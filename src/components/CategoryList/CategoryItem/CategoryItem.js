@@ -1,57 +1,56 @@
-import classes from "./ProductItem.module.scss";
 import { Link } from "react-router-dom";
+import classes from "./CategoryItem.module.scss";
 
-function ProductItem({product}) {
 
-  console.log(product);
+function CategoryItem({category}) {
   return ( 
     <>
-      <div className={classes.ProductItem}>
-        <div className={classes.aside}>
+      <div className={classes.CategoryItem}>
+      <div className={classes.aside}>
           <aside>
-            {product.action}
+            {category.novelty}
           </aside>
         </div>
         
 
         <div className={classes.centre}>
           <div className={classes.img__container}>
-            <Link to={"/products/" + product.productId}>
-              <img src={product.image} alt="#" />
+            <Link to={"/categories/" + category.categoryId}>
+              <img src={category.image} alt="#" />
             </Link>
           </div>
         </div>
 
         
         <h2>
-          {product.title}
+          {category.title}
         </h2>
         <div className={classes.together}>
 
         <div className={classes.rating}>
           <span>
-            <img src={product.rating1} alt="#"/>
+            <img src={category.rating1} alt="#"/>
           </span>
           <span>
-            <img src={product.rating2} alt="#"/>
+            <img src={category.rating2} alt="#"/>
           </span>
           <span>
-            <img src={product.rating3} alt="#"/>
+            <img src={category.rating3} alt="#"/>
           </span>
           <span>
-            <img src={product.rating4} alt="#"/>
+            <img src={category.rating4} alt="#"/>
           </span>
           <span>
-            <img src={product.rating5} alt="#"/>
+            <img src={category.rating5} alt="#"/>
           </span>
           <article>
-            {product.grade}
+            {category.grade}
           </article>
         </div>
 
 
         <div className={classes.link}>
-          <Link to={"/products/" + product.productId}> To move </Link>
+          <Link to={"/categories/" + category.categoryId}> To move </Link>
         </div>
 
           
@@ -62,18 +61,17 @@ function ProductItem({product}) {
         
         <ul>
           <li className={classes.price}>
-            ${product.price}
+            ${category.price}
           </li>
           <li className={classes.cart}>
-            <Link to={"/products/" + product.productId}>
-              {product.cart}
+            <Link to={"/categories/" + category.categoryId}>
+              {category.cart}
             </Link>
           </li>
         </ul>
-        
       </div>
     </>
   );
 }
 
-export default ProductItem;
+export default CategoryItem;

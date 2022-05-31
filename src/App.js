@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Accessories from "./pages/Stickers/Stickers";
-import Covers from "./pages/Cases/Cases";
 import Delivery from "./pages/Delivery/Delivery";
 import Headphones from "./pages/Headphones/Headphones";
 import Home from "./pages/Home/Home";
 import Warranty from "./pages/Warranty/Warranty";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Products/Product/Product";
+import Category from "./pages/Categories/Category/Category";
 
 function App() {
   return (
@@ -21,7 +21,9 @@ function App() {
 
             <Route path="/products" element={<Products/>}/>
 
-            <Route path="/products:productId" element={<Product/>}/>
+            <Route path="/products/:productId" element={<Product/>}/>
+            
+            <Route path="/categories/:categoryId" element={<Category/>}/>
 
             <Route path="headphones" element={<Headphones/>}/>
 

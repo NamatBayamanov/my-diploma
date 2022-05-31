@@ -3,6 +3,8 @@ import headerImage from "../../assets/header1.jpg";
 import headerImage2 from "../../assets/header2.jpg";
 import headerImage3 from "../../assets/header2.2.jpg";
 import headerImage4 from "../../assets/header3.jpg";
+import CategoryList from "../../components/CategoryList/CategoryList";
+import { getCategories } from "../../data/Categories";
 
 
 
@@ -46,7 +48,7 @@ function Smartphones() {
 
             </div>
 
-
+            <CategoryList categories={getCategories()}/>
             
           </div>
         </div>
