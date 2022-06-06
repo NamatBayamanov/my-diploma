@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import classes from "./Headphones.module.scss";
-import headphonesImage from "../../assets/headphones.jpg";
+// import headphonesImage from "../../assets/headphones.jpg";
 
 
 function Headphones() {

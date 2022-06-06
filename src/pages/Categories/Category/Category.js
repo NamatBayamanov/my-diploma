@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import CategoryList from "../../../components/CategoryList/CategoryList";
+// import CategoryList from "../../../components/CategoryList/CategoryList";
 import SubCategoryList from "../../../components/SubCateryList/SubCategoryList";
 import { getCategory } from "../../../data/Categories";
 import { getSubCategories } from "../../../data/SubCategories";
-import Cases from "../../Cases/Cases";
+// import Cases from "../../Cases/Cases";
 // import SubCategories from "../../SubCategories/SubCategories";
-import Categories from "../Categories";
+// import Categories from "../Categories";
 import classes from "./Category.module.scss";
 
 

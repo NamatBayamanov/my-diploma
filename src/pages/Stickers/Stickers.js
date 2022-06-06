@@ -1,4 +1,4 @@
-import Header from "../../components/Header/Header";
+// import Header from "../../components/Header/Header";
 import classes from "./Stickers.module.scss";
 
 import stickersImage from "../../assets/stickers1.jpg";

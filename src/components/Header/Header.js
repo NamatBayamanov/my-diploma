@@ -3,12 +3,12 @@ import classes from "./Header.module.scss";
 // import smartphonesImage from "../../assets/smartphones.jpg";
 // import casesImage from "../../assets/cases.jpg";
 
-import chargingImage from "../../assets/charging.jpg";
+// import chargingImage from "../../assets/charging.jpg";
 
-import headphonesImage from "../../assets/headphones.jpg";
+// import headphonesImage from "../../assets/headphones.jpg";
 
-import stickersImage from "../../assets/stickers.jpg";
-import casesImage from "../../assets/cases.jpg";
+// import stickersImage from "../../assets/stickers.jpg";
+// import casesImage from "../../assets/cases.jpg";
 
 
 

@@ -4,7 +4,7 @@ import classes from "./Warranty.module.scss";
 function Warranty() {
   return ( 
     <>
-      <div>
+      <div className={classes.Warranty}>
         Warranty
       </div>
     </>

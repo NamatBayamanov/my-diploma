@@ -4,7 +4,7 @@ import classes from "./Delivery.module.scss";
 function Delivery() {
   return ( 
     <>
-      <div >
+      <div className={classes.Delivery}>
         Delivery
       </div>
     </>

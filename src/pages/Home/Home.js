@@ -1,8 +1,8 @@
 import classes from "./Home.module.scss";
-import headerImage from "../../assets/header1.jpg";
-import headerImage2 from "../../assets/header2.jpg";
-import headerImage3 from "../../assets/header2.2.jpg";
-import headerImage4 from "../../assets/header3.jpg";
+// import headerImage from "../../assets/header1.jpg";
+// import headerImage2 from "../../assets/header2.jpg";
+// import headerImage3 from "../../assets/header2.2.jpg";
+// import headerImage4 from "../../assets/header3.jpg";
 import Categories from "../Categories/Categories";
 import viewImage from "../../assets/view.jpg";
 import viewImage2 from "../../assets/view2.jpg";

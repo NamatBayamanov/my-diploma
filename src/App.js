@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+
 import Layout from "./components/Layout/Layout";
 import Accessories from "./pages/Stickers/Stickers";
 import Delivery from "./pages/Delivery/Delivery";
@@ -8,7 +8,8 @@ import Warranty from "./pages/Warranty/Warranty";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Products/Product/Product";
 import Category from "./pages/Categories/Category/Category";
-import Cases from "./pages/Cases/Cases";
+import { Route, Routes } from "react-router-dom";
+// import Cases from "./pages/Cases/Cases";
 import SubCategory from "./pages/SubCategory/SubCategory";
 // import SubCategories from "./pages/SubCategories/SubCategories";
 
