@@ -9,7 +9,7 @@
 }
 
 .boundless__black {
-  background-color: black;
+  background-color: rgb(47, 76, 105);
 }
 
 
@@ -24,7 +24,7 @@
     flex: 1 1 0;
     font-size: 28px;
     & a {
-      color: black;
+      color: rgb(0, 0, 0);
     }
   }
 
@@ -104,8 +104,8 @@
     justify-content: space-between;
   }
   & li a {
-    color: white;
-    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
   }
   .collect2 {
     display: flex;

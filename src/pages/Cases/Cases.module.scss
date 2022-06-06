@@ -47,18 +47,18 @@
     margin-left: -12rem;
     font-weight: bolder;
   }
-  & span {
-    position: absolute;
-    top: 48%;
-    left: 31%;
-    display: inline-block;
-    background-color: rgb(0, 255, 255);
-    height: 50px;
-    width: 10px;
-    display: none;
+  // & span {
+  //   position: absolute;
+  //   top: 48%;
+  //   left: 31%;
+  //   display: inline-block;
+  //   background-color: rgb(0, 255, 255);
+  //   height: 50px;
+  //   width: 10px;
+  //   display: none;
     
     
-  }
+  // }
   
 }
 
@@ -77,217 +77,226 @@
   }
 }
 
+// .Cases .content div p p {
+//   // text-align: center;
+//   // border: 2px solid blue;
+//   & label {
+//     text-align: center;
+//     // border: 2px solid red;
+//   }
+// }.
 
 
 
-@keyframes frame{
-  0% {
-    padding: 0;
-  }
-  50% {
+
+// @keyframes frame{
+//   0% {
+//     padding: 0;
+//   }
+//   50% {
     
-  }
-  100% {
-    padding: .8rem;
-  }
-}
+//   }
+//   100% {
+//     padding: .8rem;
+//   }
+// }
 
-@media (max-width: 838px) {
-  @keyframes frame{
-    0% {
-      padding: 0;
-    }
-    50% {
+// @media (max-width: 838px) {
+//   @keyframes frame{
+//     0% {
+//       padding: 0;
+//     }
+//     50% {
       
-    }
-    100% {
-      padding: .6rem;
-    }
-  }
-}
+//     }
+//     100% {
+//       padding: .6rem;
+//     }
+//   }
+// }
 
 
-@keyframes march {
-  0% {
-    left: 293px;
-  }
+// @keyframes march {
+//   0% {
+//     left: 293px;
+//   }
 
-  100% {
-    left: 660px;
-  }
-}
+//   100% {
+//     left: 660px;
+//   }
+// }
 
-@media (max-width: 960px) {
-  @keyframes march {
-    0% {
-      left: 320px;
-    }
+// @media (max-width: 960px) {
+//   @keyframes march {
+//     0% {
+//       left: 320px;
+//     }
   
-    100% {
-      left: 640px;
-    }
-  }
-}
-@media (max-width: 900px) {
-  @keyframes march {
-    0% {
-      left: 223px;
-    }
+//     100% {
+//       left: 640px;
+//     }
+//   }
+// }
+// @media (max-width: 900px) {
+//   @keyframes march {
+//     0% {
+//       left: 223px;
+//     }
   
-    100% {
-      left: 585px;
-    }
-  }
+//     100% {
+//       left: 585px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 28%;
-    }
-  }
-}
-@media (max-width: 880px) {
-  @keyframes march {
-    0% {
-      left: 200px;
-    }
+//   .Cases article p { 
+//     & span {
+//       left: 28%;
+//     }
+//   }
+// }
+// @media (max-width: 880px) {
+//   @keyframes march {
+//     0% {
+//       left: 200px;
+//     }
   
-    100% {
-      left: 565px;
-    }
-  }
+//     100% {
+//       left: 565px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 26%;
-    }
-  }
-}
+//   .Cases article p { 
+//     & span {
+//       left: 26%;
+//     }
+//   }
+// }
 
-@media (max-width: 860px) {
-  @keyframes march {
-    0% {
-      left: 180px;
-    }
+// @media (max-width: 860px) {
+//   @keyframes march {
+//     0% {
+//       left: 180px;
+//     }
   
-    100% {
-      left: 530px;
-    }
-  }
+//     100% {
+//       left: 530px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 24%;
-    }
-  }
-}
+//   .Cases article p { 
+//     & span {
+//       left: 24%;
+//     }
+//   }
+// }
 
-@media (max-width: 840px) {
-  @keyframes march {
-    0% {
-      left: 160px;
-    }
+// @media (max-width: 840px) {
+//   @keyframes march {
+//     0% {
+//       left: 160px;
+//     }
   
-    100% {
-      left: 510px;
-    }
-  }
+//     100% {
+//       left: 510px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 22%;
-    }
-  }
-}
-@media (max-width: 840px) {
-  @keyframes march {
-    0% {
-      left: 120px;
-    }
+//   .Cases article p { 
+//     & span {
+//       left: 22%;
+//     }
+//   }
+// }
+// @media (max-width: 840px) {
+//   @keyframes march {
+//     0% {
+//       left: 120px;
+//     }
   
-    100% {
-      left: 495px;
-    }
-  }
+//     100% {
+//       left: 495px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 20%;
-    }
-  }
-}
+//   .Cases article p { 
+//     & span {
+//       left: 20%;
+//     }
+//   }
+// }
 
 
 
-@media (max-width: 815px) {
-  @keyframes march {
-    0% {
-      left: 190px;
-    }
+// @media (max-width: 815px) {
+//   @keyframes march {
+//     0% {
+//       left: 190px;
+//     }
   
-    100% {
-      left: 550px;
-    }
-  }
+//     100% {
+//       left: 550px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 26%;
-    }
-  }
-}
+//   .Cases article p { 
+//     & span {
+//       left: 26%;
+//     }
+//   }
+// }
 
 
-@media (max-width: 760px) {
-  @keyframes march {
-    0% {
-      left: 190px;
-    }
+// @media (max-width: 760px) {
+//   @keyframes march {
+//     0% {
+//       left: 190px;
+//     }
   
-    100% {
-      left: 520px;
-    }
-  }
+//     100% {
+//       left: 520px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 30%;
-    }
-  }
-}
-@media (max-width: 730px) {
-  @keyframes march {
-    0% {
-      left: 160px;
-    }
+//   .Cases article p { 
+//     & span {
+//       left: 30%;
+//     }
+//   }
+// }
+// @media (max-width: 730px) {
+//   @keyframes march {
+//     0% {
+//       left: 160px;
+//     }
   
-    100% {
-      left: 520px;
-    }
-  }
+//     100% {
+//       left: 520px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 23%;
-    }
-  }
-}
+//   .Cases article p { 
+//     & span {
+//       left: 23%;
+//     }
+//   }
+// }
 
-@media (max-width: 530px) {
-  @keyframes march {
-    0% {
-      left: 60px;
-    }
+// @media (max-width: 530px) {
+//   @keyframes march {
+//     0% {
+//       left: 60px;
+//     }
   
-    100% {
-      left: 420px;
-    }
-  }
+//     100% {
+//       left: 420px;
+//     }
+//   }
 
-  .Cases article p { 
-    & span {
-      left: 12%;
-    }
-  }
-}
+//   .Cases article p { 
+//     & span {
+//       left: 12%;
+//     }
+//   }
+// }
 
 

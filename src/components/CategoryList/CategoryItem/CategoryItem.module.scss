@@ -1,6 +1,6 @@
 .CategoryItem {
   background-color: rgb(55, 70, 135);
-  border: 2px solid blue;
+  border: 1px solid rgb(255, 27, 27);
   flex: 1 1 20%;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -10,8 +10,9 @@
 .CategoryItem:hover {
   background-color: burlywood;
   transition: all .3s;
-  box-shadow: 0 0 10px rgb(0, 17, 255);
+  box-shadow: 0 0 10px rgb(255, 18, 18);
   & .aside {
+    
     & aside {
       color: rgba(4, 0, 255, 0.542);
       background-color: rgb(255, 0, 0);

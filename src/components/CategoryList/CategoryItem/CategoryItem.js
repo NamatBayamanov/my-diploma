@@ -27,7 +27,7 @@ function CategoryItem({category}) {
         </h2>
         <div className={classes.together}>
 
-        <div className={classes.rating}>
+        {/* <div className={classes.rating}>
           <span>
             <img src={category.rating1} alt="#"/>
           </span>
@@ -46,7 +46,7 @@ function CategoryItem({category}) {
           <article>
             {category.grade}
           </article>
-        </div>
+        </div> */}
 
 
         <div className={classes.link}>
@@ -59,7 +59,7 @@ function CategoryItem({category}) {
         
 
         
-        <ul>
+        {/* <ul>
           <li className={classes.price}>
             ${category.price}
           </li>
@@ -68,7 +68,7 @@ function CategoryItem({category}) {
               {category.cart}
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </>
   );

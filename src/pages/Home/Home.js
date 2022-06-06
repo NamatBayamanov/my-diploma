@@ -3,12 +3,16 @@ import headerImage from "../../assets/header1.jpg";
 import headerImage2 from "../../assets/header2.jpg";
 import headerImage3 from "../../assets/header2.2.jpg";
 import headerImage4 from "../../assets/header3.jpg";
-import CategoryList from "../../components/CategoryList/CategoryList";
-import { getCategories } from "../../data/Categories";
+import Categories from "../Categories/Categories";
+import viewImage from "../../assets/view.jpg";
+import viewImage2 from "../../assets/view2.jpg";
+import viewImage3 from "../../assets/view3.jpg";
+import viewImage4 from "../../assets/view4.jpg";
 
 
 
-function Smartphones() {
+
+function Home() {
 
   return (
     <>
@@ -19,7 +23,7 @@ function Smartphones() {
             <div className={classes.smartphones__flex}>
 
               <div className={classes.image1}>
-                <img src={headerImage} alt="#" />
+                <img src={viewImage} alt="#" />
               </div>
 
 
@@ -29,16 +33,16 @@ function Smartphones() {
 
                 <div className={classes.watch}>
                   <div className={classes.image2}>
-                    <img src={headerImage2} alt="#" />
+                    <img src={viewImage2} alt="#" />
                   </div>
 
                   <div className={classes.image3}>
-                    <img src={headerImage3} alt="#" />
+                    <img src={viewImage3} alt="#" />
                   </div>
                 </div>
 
                 <div className={classes.image4}>
-                  <img src={headerImage4} alt="#" />
+                  <img src={viewImage4} alt="#" />
                 </div>
 
 
@@ -48,8 +52,8 @@ function Smartphones() {
 
             </div>
 
-            <CategoryList categories={getCategories()}/>
             
+            <Categories/>
           </div>
         </div>
 
@@ -59,4 +63,4 @@ function Smartphones() {
   );
 }
 
-export default Smartphones;
+export default Home;

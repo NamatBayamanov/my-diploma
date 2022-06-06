@@ -8,6 +8,9 @@ import Warranty from "./pages/Warranty/Warranty";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Products/Product/Product";
 import Category from "./pages/Categories/Category/Category";
+import Cases from "./pages/Cases/Cases";
+import SubCategory from "./pages/SubCategory/SubCategory";
+// import SubCategories from "./pages/SubCategories/SubCategories";
 
 function App() {
   return (
@@ -24,6 +27,8 @@ function App() {
             <Route path="/products/:productId" element={<Product/>}/>
             
             <Route path="/categories/:categoryId" element={<Category/>}/>
+
+            <Route path="/categoryId/:subCategoryId" element={<SubCategory/>}/>
 
             <Route path="headphones" element={<Headphones/>}/>
 

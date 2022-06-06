@@ -19,7 +19,7 @@ const categories = [
     rating5: ratingImage2,
     grade: "74",
 
-    categoryId: "google_pixel_4xl",
+    categoryId: "cases_for_smartphones",
 
     price: "___",
     cart: <BsCart2/>,
@@ -43,7 +43,7 @@ const categories = [
     rating5: ratingImage2,
     grade: "86",
 
-    categoryId: "google_pixel_4xl",
+    categoryId: "comfortable_headphones",
 
     price: "___",
     cart: <BsCart2/>,
@@ -67,7 +67,7 @@ const categories = [
     rating5: ratingImage2,
     grade: "71",
 
-    categoryId: "google_pixel_4xl",
+    categoryId: "stickers_for_smartphones",
 
     price: "___",
     cart: <BsCart2/>,
@@ -91,7 +91,7 @@ const categories = [
     rating5: ratingImage2,
     grade: "71",
 
-    categoryId: "google_pixel_4xl",
+    categoryId: "powerful_chargings",
 
     price: "___",
     cart: <BsCart2/>,
@@ -107,5 +107,21 @@ const categories = [
 ];
 
 export function getCategories() {
+
+
+
   return categories;
 }
+
+
+export function getCategory(categoryId) {
+  return categories[
+    categories.findIndex(
+      category => category.categoryId === categoryId
+    )
+  ];
+}
+
+
+
+

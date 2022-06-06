@@ -28,19 +28,19 @@
     font-size: 20px;
     & h2 {
       flex: 1 1 0;
-      color: red;
+      color: rgb(255, 255, 255);
       text-shadow: 0 0 10px blue;
     }
     & h3 {  
       flex: 0 1 0;
       margin: 1rem 0;
-      color: blue;
+      color: rgb(255, 255, 255);
       text-shadow: 0 0 10px burlywood;
-      border-bottom: 3px solid red;
+      border-bottom: 3px solid rgb(0, 55, 255);
       
     }
     & p {
-      color: burlywood;
+      color: rgb(255, 255, 255);
       text-indent: 25px;
       
     }
@@ -49,25 +49,29 @@
       padding: .6rem;
       // justify-content: space-between;
       // text-align: center;
-      justify-content: space-between;
+      // justify-content: space-between;
+
       & p {
-        background-color: blue;
-        padding: 1rem 1.6rem 1rem .3rem;
+        color: black;
+        background-color: #fff461;
+        padding: .8rem 2rem .8rem .3rem;
         display: inline-block;
         margin: 0 1rem;
         border-bottom: 3px solid red;
         box-shadow: 0 0 10px rgb(255, 242, 0);
+        margin-right: 2rem;
         // border-radius: 2rem;
       }
 
       & a {
         display: inline-block;
-        background-color: green;
-        padding: 1rem;
-        border-radius: 1rem;
+        background-color: rgb(0, 26, 255);
+        padding: 1rem 1.5rem;
+        border-radius: .3rem;
+        color: red;
       }
       & a:hover {
-        box-shadow: 0 0 10px burlywood;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
         transition: all .2s;
       }
     }
