@@ -90,7 +90,7 @@ function Nav() {
                 Home
               </NavItem>
 
-              <NavItem url="/products" active>
+              <NavItem url="/products">
                 Products
               </NavItem>
 

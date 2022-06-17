@@ -16,7 +16,7 @@ function NavItem({url, children, active}) {
   return ( 
     <>
         <li className={classes.NavItem}>
-          <NavLink to={url} active={active}>
+          <NavLink to={url} activeClassName={classes.active}>
             {children}
           </NavLink>
         </li>         
