@@ -4,6 +4,7 @@
 .CategoryList .content {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
-  justify-content: center;
+  gap: 20px;
+  // justify-content: center;
+  justify-content: space-between;
 }
