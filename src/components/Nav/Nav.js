@@ -7,94 +7,93 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
 import NavItem from "./NavItem/NavItem";
+import NavToggle from "./NavToggle/NavToggle";
 
 function Nav() {
+  // const [actives, setActives] = useState(false);
 
-  const [actives, setActives] = useState(false);
-
-  function onToggle() {
-    setActives(!actives);
-  };
+  // function onToggle() {
+  //   setActives(!actives);
+  // }
 
   return (
     <>
       <nav className={classes.Nav}>
-
-
         <div className={classes.boundless__white}>
           <div className="container">
+
+            
+
             <div className={classes.navbar1}>
+
+            <NavToggle/>
 
               <div className={classes.logo}>
                 <Logo />
               </div>
 
               <ul className={`${classes.list1} ${classes.list}`}>
-
                 <li className={classes.phone}>
-                  
-                  <a href="/">
-                    +996 709 266 729
-                  </a>
+                  <a href="/">+996 709 266 729</a>
                   <span>
-                    <FaPhoneAlt/>
+                    <FaPhoneAlt />
                   </span>
-                  <div>
-                    Mun-Son: 10:00-22:00
-                  </div>
+                  <div>Mun-Son: 10:00-22:00</div>
                 </li>
 
                 <li>
                   <div className={classes.bottom__borders}>
-                    <input type="text" placeholder="Search" aria-label="Search" />
+                    <input
+                      type="text"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
                     <button>
-                      <FaSistrix/>
+                      <FaSistrix />
                     </button>
                   </div>
-                  
                 </li>
-
 
                 <li>
                   <div className={classes.user}>
                     <a href="/">
-                      <FaUserAlt/>
+                      <FaUserAlt />
                     </a>
                     <a href="/">
-                      <FaHeart/>
+                      <FaHeart />
                     </a>
                     <a href="/">
-                      <FaShoppingCart/>
+                      <FaShoppingCart />
                     </a>
                   </div>
-                  
                 </li>
               </ul>
 
+              
 
-              <div className={`${classes.burger} ${actives ? `${classes.active}` : "" }`} onClick={onToggle}>
+              {/* <div
+                className={`${classes.burger} ${
+                  actives ? `${classes.active}` : ""
+                }`}
+                onClick={onToggle}
+                >
                 <span></span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
-
-
         <div className={classes.boundless__black}>
           <div className="container">
             <ul className={`${classes.list2} ${classes.list}  `}>
+              <div className={classes.collect1}>
+                <NavItem url="/" active>
+                  Home
+                </NavItem>
 
-            <div className={classes.collect1}>
-              <NavItem url="/" active>
-                Home
-              </NavItem>
+                <NavItem url="/products">Products</NavItem>
 
-              <NavItem url="/products">
-                Products
-              </NavItem>
-
-              {/* <NavItem url="stickers"  >
+                {/* <NavItem url="stickers"  >
                 Stickers
               </NavItem>
               <NavItem url="cases" active>
@@ -103,32 +102,15 @@ function Nav() {
               <NavItem url="headphones">
                 Headphones
               </NavItem> */}
-
-            </div>
-
-            
-
-
-              <div className={classes.collect2}>
-              <NavItem url="delivery">
-                Delivery
-              </NavItem>
-              <NavItem url="warranty">
-                Warranty
-              </NavItem>
-
               </div>
 
-
+              <div className={classes.collect2}>
+                <NavItem url="delivery">Delivery</NavItem>
+                <NavItem url="warranty">Warranty</NavItem>
+              </div>
             </ul>
           </div>
         </div>
-
-
-
-
-
-
       </nav>
     </>
   );

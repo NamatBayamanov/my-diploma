@@ -1,0 +1,66 @@
+.NavToggle {
+  @media (max-width: 680px) {
+
+    .burger {
+      // background-color: rgb(100, 100, 100);
+      width: 30px;
+    
+      position: relative;
+      z-index: 0;
+      padding: 1.2rem 0;
+    }
+    
+    .burger::before {
+      content: "";
+    
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(255, 255, 255);
+    }
+    
+    .burger.active::before {
+      transform: rotate(45deg);
+      top: 16px;
+      transition: all .3s;
+    }
+    
+    .burger::after {
+      content: "";
+    
+      position: absolute;
+      top: 26px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: rgb(255, 255, 255);
+    }
+    
+    .burger.active::after {
+      transform: rotate(-45deg);
+      top: 17px;
+      height: 2px;
+      transition: all .3s;
+    }
+    
+    .burger span {
+      position: absolute;
+      top: 17px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(255, 255, 255);
+    }
+    .burger.active span {
+      transform: scale(0);
+    }
+  }
+  
+  
+  
+  
+  
+}
+
