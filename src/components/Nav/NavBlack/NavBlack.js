@@ -13,11 +13,12 @@ function NavBlack() {
             <ul className={`${classes.list2} ${classes.list}  `}>
 
               <div className={classes.collect1}>
-                <NavItem url="/" active>
+
+                <NavItem url="/" active >
                   Home
                 </NavItem>
 
-                <NavItem url="/products">Products</NavItem>
+                <NavItem url="/products"  >Products</NavItem>
 
                 {/* <NavItem url="stickers"  >
                 Stickers

@@ -10,13 +10,15 @@
   border-bottom: 3px solid transparent;
   color: rgb(47, 76, 105);
 }
+
 .NavItem a:hover {
   background-color: rgb(162, 0, 255);
-  color: rgb(0, 0, 0);
+  // color: rgb(0, 0, 0);
+  border-bottom: 2px solid black;
 }
+
 .NavItem a.active {
-  color: red;
-}
-.active {
-  color: red;
+  color: rgb(0, 0, 0);
+
+  border-bottom: 2px solid black;
 }

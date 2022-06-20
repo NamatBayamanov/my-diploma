@@ -2,13 +2,13 @@ import classes from "./Nav.module.scss";
 import NavBlack from "./NavBlack/NavBlack";
 import NavWhite from "./NavWhite/NavWhite";
 
-function Nav() {
+function Nav({toggle}) {
 
   return (
     <>
       <nav className={classes.Nav}>
-        <NavWhite/>
-        <NavBlack/>
+        <NavWhite toggle={toggle} />
+        <NavBlack />
       </nav>
     </>
   );

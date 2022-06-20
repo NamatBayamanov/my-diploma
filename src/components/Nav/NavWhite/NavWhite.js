@@ -8,7 +8,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
-function NavWhite() {
+function NavWhite({toggle}) {
   return ( 
     <div className={classes.NavWhite}>
       <article className={classes.boundless__white}>
@@ -18,7 +18,7 @@ function NavWhite() {
 
             <div className={classes.navbar1}>
 
-              <NavToggle  />
+              <NavToggle toggle={toggle} />
 
               <div className={classes.logo}>
                 <Logo />

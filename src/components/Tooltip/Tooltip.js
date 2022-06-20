@@ -4,11 +4,11 @@ import classes from "./Tooltip.module.scss";
 
 
 
-function Tooltip() {
+function Tooltip({toggle}) {
   return ( 
 
     <div className={classes.Tooltip}>
-      <Nav/>
+      <Nav toggle={toggle}/>
       <Brands/>
 
       

@@ -4,40 +4,33 @@ import NavBlack from "../Nav/NavBlack/NavBlack";
 import Logo from "../ui/Logo/Logo";
 import classes from "./Drawer.module.scss";
 
-function Drawer() {
+function Drawer({ toggle, state }) {
   return (
+
+
     <div className={classes.Drawer}>
-      <div className={classes.background}>
-        <div className={classes.menu}>
-          <div className={classes.logo}>
-            <h2>
-              MobileWeb
-            </h2>
-          </div>
+      <div className={`${classes.background} ${state ? `${classes.none}` : ""  }`} onClick={toggle}>
+
+      </div>
+
+      <div className={`${classes.menu} ${state ? `${classes.close}` : ""  }`}>
+        <div className={classes.menu__content}>
+          <h2>MobileWeb</h2>
 
           <ul className={classes.list}>
-              <li>
-                <Link to="">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="">
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link to="">
-                  Delivery
-                </Link>
-              </li>
-              <li>
-                <Link to="">
-                  Warranty
-                </Link>
-              </li>
-            </ul>
-
+            <li>
+              <Link to="">Home</Link>
+            </li>
+            <li>
+              <Link to="">Products</Link>
+            </li>
+            <li>
+              <Link to="">Delivery</Link>
+            </li>
+            <li>
+              <Link to="">Warranty</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

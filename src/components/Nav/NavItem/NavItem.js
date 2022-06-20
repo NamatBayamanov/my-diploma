@@ -1,23 +1,20 @@
 import { NavLink } from "react-router-dom";
 import classes from "./NavItem.module.scss";
 
-
-
-function NavItem({url, children, active}) {
-
+function NavItem({ url, children, active }) {
   // const classNames = [];
-  
-    // active = "active";
+
+  // active = "active";
 
   // className={`${active ? `${classes.active}` : ""}`}
 
-  return ( 
+  return (
     <>
-        <li className={classes.NavItem}>
-          <NavLink to={url} active={active}>
-            {children}
-          </NavLink>
-        </li>         
+      <li className={classes.NavItem}>
+        <NavLink to={url} activeClassName={classes.active}>
+          {children}
+        </NavLink>
+      </li>
     </>
   );
 }
