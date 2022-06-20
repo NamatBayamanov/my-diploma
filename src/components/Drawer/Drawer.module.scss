@@ -4,7 +4,7 @@
 .Drawer {
   font-family: Arial, Helvetica, sans-serif;
   & .background {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@
 
 
   & .menu {
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@
 
       text-align: center;
       & h2 {
-        
+        color: rgb(174, 0, 255);
         font-size: 36px;
         margin-bottom: 2.2rem;
       }
@@ -52,13 +52,15 @@
         & a {
           display: inline-block;
           padding: 1rem 0rem;
-          color: red;
+          color: rgb(174, 0, 255);
           font-size: 24px;
           width: 200px;
           
         }
         & a:hover {
-          background-color: rgba(0, 0, 0, .3);
+          border-radius: 10px 0 10px 0;
+          transition: all .3s;
+          background-color: rgba(134, 129, 129, 0.3);
         }
       }
     }

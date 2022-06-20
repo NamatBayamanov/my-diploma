@@ -1,7 +1,7 @@
 .CategoryItem {
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 27, 27);
-  flex: 0 1 210px;
+  flex: 0 0 220px;
   margin-bottom: 15px;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -11,21 +11,24 @@
   margin: 0 -5px;
 }
 .CategoryItem:hover {
-  background-color: burlywood;
+  background-color: rgb(0, 0, 0);
   transition: all .3s;
   box-shadow: 0 0 10px rgb(255, 18, 18);
   & .aside {
     
     & aside {
-      color: rgba(4, 0, 255, 0.542);
-      background-color: rgb(255, 0, 0);
+      // color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
       box-shadow: 0 0 10px rgb(0, 0, 0);
+      transition: all.2s;
+
+      // border-color: white;
     }
     
   }
 
   & h2 {
-    color: rgb(85, 82, 255);
+    // color: rgb(255, 255, 255);
   }
 
   & .together {
@@ -36,8 +39,8 @@
     }
     & .link {
       & a {
-        color: rgb(0, 0, 0);
-        font-weight: 555;
+        // color: rgb(255, 255, 255);
+        // font-weight: 555;
       }
     }
   }
@@ -52,7 +55,11 @@
 
   }
 }
-
+.CategoryItem {
+  & .title {
+    font-size: 22px;
+  }
+}
 .CategoryItem .aside {
   display: flex;
   padding: .3rem .8rem;
@@ -63,7 +70,11 @@
     padding: .3rem 1.6rem .3rem 1.5rem;
     background-color: rgb(0, 0, 0);
     border-radius: 10px 0 10px 0;
+    border: 2px solid rgb(166, 0, 255);
     color: rgb(166, 0, 255);
+
+    transition: all.2;
+    margin-bottom: 1rem;
     // border-bottom: 1xp solid red;
   }
 }
@@ -138,10 +149,11 @@
 
 .CategoryItem .together {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   padding: .5rem 1rem;
+
   & .rating {
     & article {
       font-size: 20px;
@@ -150,11 +162,12 @@
   }
   & .link {
     font-size: 18px;
-
+    
     & a {
-      color: red;
-      text-shadow: 0 0 8px rgb(255, 1, 1);
-      border-bottom: 3px dotted rgb(255, 33, 33);
+      
+      color: rgb(149, 0, 255);
+      // text-shadow: 0 0 8px rgb(255, 1, 1);
+      // border-bottom: 3px dotted rgb(255, 33, 33);
     }
   }
 }
