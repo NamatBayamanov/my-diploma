@@ -1,0 +1,47 @@
+.NavBlack {
+
+}
+.list {
+  display: flex;
+}
+.boundless__black {
+  background-color: rgb(120, 2, 194);
+}
+
+.NavBlack {
+
+  & .list2 {
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    text-transform: uppercase;
+  
+    padding-right: 10px;
+    padding-left: 10px;
+    & .collect1 {
+      width: 520px;
+      display: flex;
+      justify-content: space-between;
+    }
+    & li a {
+      color: rgb(255, 255, 255);
+      font-size: 17px;
+    }
+    .collect2 {
+      display: flex;
+      & li a {
+        // padding-left: 2.5rem;
+        display: inline-block;
+        margin: 0 0 0 1rem;
+      }
+    }
+  } 
+}
+@media (max-width: 680px) {
+  .NavBlack {
+
+    & .boundless__black {
+      display: block;
+    }
+  }
+}
