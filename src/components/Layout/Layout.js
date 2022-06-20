@@ -1,15 +1,15 @@
-import Nav from "../Nav/Nav";
+// import Nav from "../Nav/Nav";
 // import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import classes from "./Layout.module.scss";
-import Brands from "../Brands/Brands";
+// import Brands from "../Brands/Brands";
 import Tooltip from "../Tooltip/Tooltip";
 import Drawer from "../Drawer/Drawer";
 import { useState } from "react";
 
 
 function Layout({children}) {
-  const [drawer, setDrawer] = useState(false);
+  const [drawer, setDrawer] = useState(true);
 
   const onDrawerToggle = () => {
     setDrawer(!drawer);

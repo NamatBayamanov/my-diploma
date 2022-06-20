@@ -18,7 +18,7 @@ function NavBlack() {
                   Home
                 </NavItem>
 
-                <NavItem url="/products"  >Products</NavItem>
+                <NavItem url="/products">Products</NavItem>
 
                 {/* <NavItem url="stickers"  >
                 Stickers

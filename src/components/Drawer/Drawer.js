@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import Nav from "../Nav/Nav";
-import NavBlack from "../Nav/NavBlack/NavBlack";
-import Logo from "../ui/Logo/Logo";
 import classes from "./Drawer.module.scss";
 
 function Drawer({ toggle, state }) {
