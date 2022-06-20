@@ -3,18 +3,18 @@ import {useState} from "react";
 
 function NavToggle({toggle}) {
 
-  const [actives, setActives] = useState(false);
+  // const [actives, setActives] = useState(false);
 
   // function onToggle() {
   //   setActives(!actives);
   // }
 
-  const [ switchs, setSwitchs ] = useState([]);
+  // const [ switchs, setSwitchs ] = useState([]);
 
   return (
     <div className={classes.NavToggle} onClick={toggle} >
       <div
-        className={`${classes.burger} ${actives ? `${classes.active}` : ""}`}
+        className={`${classes.burger}`}
       
       >
         <span></span>
