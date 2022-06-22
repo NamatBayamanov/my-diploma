@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import CartButton from "../../../components/CartButton/CartButton";
 import { getProduct } from "../../../data/Products";
 import classes from "./Product.module.scss";
 
@@ -37,6 +38,7 @@ function Product() {
                   </Link>
                 </article>
               </div>
+              <CartButton productId={params.productId}/>
             </div>
           </div>
         </div>

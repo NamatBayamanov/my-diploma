@@ -11,6 +11,7 @@ import Category from "./pages/Categories/Category/Category";
 import { Route, Routes } from "react-router-dom";
 // import Cases from "./pages/Cases/Cases";
 import SubCategory from "./pages/SubCategory/SubCategory";
+import Cart from "./pages/Cart/Cart";
 // import SubCategories from "./pages/SubCategories/SubCategories";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
             <Route path="warranty" element={ <Warranty/>}/>
 
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </Layout>
         

@@ -14,11 +14,14 @@
 .NavItem a:hover {
   background-color: rgba(190, 186, 186, 0.323);
   // color: rgb(0, 0, 0);
-  border-bottom: 2px solid black;
+  // border-bottom: 2px solid black;
 }
 
 .NavItem a.active {
   color: rgb(0, 0, 0);
 
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.active {
+  color: red;
 }
