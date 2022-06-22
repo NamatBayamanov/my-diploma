@@ -33,12 +33,13 @@ function Product() {
                   <p>
                     ${product.price}
                   </p>
-                  <Link to="/">
+                  {/* <Link to="/">
                     {product.buy}
-                  </Link>
+                  </Link> */}
+                    <CartButton productId={params.productId}/>
                 </article>
               </div>
-              <CartButton productId={params.productId}/>
+              
             </div>
           </div>
         </div>

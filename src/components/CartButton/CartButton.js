@@ -1,6 +1,9 @@
 import { useDispatch } from "react-redux";
 
 export default function CartButton({ productId }) {
+
+  console.log(productId);
+
   const dispatch = useDispatch();
 
   function onAddToCart() {

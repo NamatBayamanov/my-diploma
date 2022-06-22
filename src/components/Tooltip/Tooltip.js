@@ -1,5 +1,5 @@
 import Brands from "../Brands/Brands";
-import CartLink from "../CarLink/CarLink";
+// import CartLink from "../CarLink/CarLink";
 import Nav from "../Nav/Nav";
 import classes from "./Tooltip.module.scss";
 
@@ -11,7 +11,7 @@ function Tooltip({toggle}) {
     <div className={classes.Tooltip}>
       <Nav toggle={toggle}/>
       <Brands/>
-      <CartLink/>
+      {/* <CartLink/> */}
       
     </div>
   );
