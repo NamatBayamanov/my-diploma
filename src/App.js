@@ -12,9 +12,19 @@ import { Route, Routes } from "react-router-dom";
 // import Cases from "./pages/Cases/Cases";
 import SubCategory from "./pages/SubCategory/SubCategory";
 import Cart from "./pages/Cart/Cart";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import CheckOut from "./pages/CheckOut/CheckOut";
 // import SubCategories from "./pages/SubCategories/SubCategories";
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: "cart/restore" });
+  },[]);
+
   return (
     <div className="App">
       <>
@@ -39,6 +49,8 @@ function App() {
             <Route path="warranty" element={ <Warranty/>}/>
 
             <Route path="/cart" element={<Cart />} />
+
+            <Route path="/checkout" element={<CheckOut />} />
           </Routes>
         </Layout>
         
