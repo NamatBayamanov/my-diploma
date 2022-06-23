@@ -1,11 +1,16 @@
-import Header from "../../components/Header/Header";
-import image from "../../assets/cart/cart.webp";
-import { useSelector } from "react-redux";
+import classes from "./CheckOut.module.scss";
+import { useSelector, useDispatch } from "react-redux";
 import { getProducts } from "../../data/Products";
-import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import classes from "./Cart.module.scss";
-function Cart() {
+import Header from "../../components/Header/Header";
+import { Link, useNavigate } from "react-router-dom";
+import checkoutImage from "../../assets/checkout/checkout.webp";
+import { checkout } from "../../redux/slices/cartSlice/cartSlice";
+function CheckOut() {
+
+  
+  const navigate = useNavigate();
+
+
   const styles = {
     display: "inline-block",
     paddingTop: 0.5 + "rem",
@@ -83,10 +88,20 @@ function Cart() {
     output = "No items in cart";
   }
 
+  function onCheckout(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    dispatch(checkout(Object.fromEntries(formData.entries())));
+    navigate('/');
+  }
+
+  // image={image}
+
   return (
-    <div className={classes.Cart}>
+    <div className={classes.CheckOut}>
       <div className="container">
-        <Header title="Your Shopping Cart" image={image}>
+        <Header title="CheckOut" image={checkoutImage}> 
           <span>Please review items in your cart.</span>
         </Header>
         <div>
@@ -95,11 +110,31 @@ function Cart() {
             <hr />
             Total: ${total}
           </div>
-          <Link to="/checkout">CheckOut</Link>
+          <form onSubmit={onCheckout}>
+            <lable>
+              first name:
+              <input type="text" name="firstName" required/>
+            </lable>
+            <lable>
+              last Name:
+              <input type="text" name="lastName" required/>
+            </lable>
+            <lable>
+              address: 
+              <input type="text" name="address"  required/>
+            </lable>
+            <lable>
+              Phone:
+              <input type="telephone" name="phone"  required/>
+            </lable>
+            <button>
+              Send
+            </button>
+          </form>
         </div>
       </div>
     </div>
   );
 }
 
-export default Cart;
+export default CheckOut;

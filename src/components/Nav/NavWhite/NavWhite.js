@@ -7,6 +7,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import CartLink from "../../CarLink/CarLink";
 
 function NavWhite({toggle}) {
   return ( 
@@ -54,9 +55,10 @@ function NavWhite({toggle}) {
                     <a href="/">
                       <FaHeart />
                     </a>
-                    <a href="/">
+                    {/* <a href="/">
                       <FaShoppingCart />
-                    </a>
+                    </a> */}
+                    <CartLink/>
                   </div>
                 </li>
               </ul>

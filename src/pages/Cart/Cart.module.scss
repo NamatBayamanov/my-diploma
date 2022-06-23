@@ -1,0 +1,22 @@
+.Cart {
+
+}
+.Cart {
+  display: block;
+  text-align: center;
+  & span {
+    display: inline-block;
+    font-size: 25px;
+    padding: 1rem 2rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  & .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1xp solid red;
+  }
+  font-size: 20px;
+  
+}

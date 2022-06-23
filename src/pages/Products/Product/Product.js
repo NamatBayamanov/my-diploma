@@ -30,7 +30,7 @@ function Product() {
                   {product.description}
                 </p>
                 <article>
-                  <p>
+                  <p className={classes.price}>
                     ${product.price}
                   </p>
                   {/* <Link to="/">

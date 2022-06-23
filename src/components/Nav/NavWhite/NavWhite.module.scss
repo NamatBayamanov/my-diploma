@@ -65,10 +65,10 @@
       }
       
       & .user {
-        width: 90px;
+        width: 130px;
         // background-color: red;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         & a {
           font-size: 20px;
           color: black;
@@ -86,7 +86,7 @@
   }
 
 
-  @media (max-width: 680px) {
+  @media (max-width: 695px) {
     .boundless__white {
       background-color: black;
     }
@@ -113,7 +113,7 @@
     }
   
     .navbar1 .list1 {
-      width: 90px;
+      width: 110px;
       // background-color: red;
       & .bottom__borders {
         // display: none;
@@ -145,8 +145,12 @@
       }
       
       & .user {
+        // display: inline-block;
+        // width: 300px;
+        // padding-right: 10px;
         & a {
           color: white;
+          // display: inline-block;
         }
       }
     }
