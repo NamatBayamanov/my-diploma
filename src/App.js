@@ -15,6 +15,7 @@ import Cart from "./pages/Cart/Cart";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import CheckOut from "./pages/CheckOut/CheckOut";
+import Auth from "./pages/Auth/Auth";
 // import SubCategories from "./pages/SubCategories/SubCategories";
 
 function App() {
@@ -51,6 +52,8 @@ function App() {
             <Route path="/cart" element={<Cart />} />
 
             <Route path="/checkout" element={<CheckOut />} />
+
+            <Route path="/auth" element={<Auth />} />
           </Routes>
         </Layout>
         
