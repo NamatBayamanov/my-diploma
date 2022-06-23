@@ -1,4 +1,4 @@
-import CartLink from "../../CarLink/CarLink";
+// import CartLink from "../../CarLink/CarLink";
 import NavItem from "../NavItem/NavItem";
 import classes from "./NavBlack.module.scss";
 
@@ -35,7 +35,7 @@ function NavBlack() {
               <article className={classes.collect2}>
                 <NavItem url="delivery">Delivery</NavItem>
                 <NavItem url="warranty">Warranty</NavItem>
-                <CartLink/>
+                {/* <CartLink/> */}
               </article>
             </ul>
           </div>
