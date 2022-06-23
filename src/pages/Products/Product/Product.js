@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import CartButton from "../../../components/CartButton/CartButton";
 import { getProduct } from "../../../data/Products";
 import classes from "./Product.module.scss";

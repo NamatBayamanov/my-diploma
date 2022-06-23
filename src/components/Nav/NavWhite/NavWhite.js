@@ -5,7 +5,7 @@ import classes from "./NavWhite.module.scss";
 import { FaSistrix } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
-import { FaShoppingCart } from "react-icons/fa";
+// import { FaShoppingCart } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import CartLink from "../../CarLink/CarLink";
 

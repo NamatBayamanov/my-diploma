@@ -10,17 +10,6 @@ function CheckOut() {
   
   const navigate = useNavigate();
 
-
-  const styles = {
-    display: "inline-block",
-    paddingTop: 0.5 + "rem",
-    paddingBottom: 0.5 + "rem",
-    paddingLeft: 0.8 + "rem",
-    paddingRight: 0.8 + "rem",
-    border: "2px solid black",
-    borderRadius: 0.5 + "rem",
-    backgroundColor: "yellow",
-  };
   const styles2 = {
     display: "flex",
     gap: 10 + "px",
