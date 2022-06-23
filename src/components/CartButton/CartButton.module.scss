@@ -1,0 +1,15 @@
+.CartButton {
+  color: rgb(0, 0, 0);
+  font-weight: 555;
+  border: 1px solid black;
+  padding: .8rem 1.5rem;
+  // border-radius: 19px 0 19px 0;
+  transition: all .2s;
+
+  border-radius: 3rem;
+  border-bottom: 3px solid rgb(0, 81, 255);
+}
+.CartButton:hover {
+  transition: all .2s;
+  background-color: rgb(124, 244, 255);
+}

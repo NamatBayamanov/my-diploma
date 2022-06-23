@@ -26,6 +26,7 @@
       }
       & .form {
 
+        padding: 2rem;
         & form {
           & input {
             color: white;
@@ -77,18 +78,42 @@
 
 @media(max-width: 835px) {
   .Footer {
-    max-width: 834;
-    margin: 0 auto;
+    // width: 834px;
+    // margin: 0 auto;
+    // display: flex;
+    // // flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // text-align: center;
+  }
+  .Footer .content {
     display: flex;
+    
+    // flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    // margin: 0 auto;
+
+    // border: 1px solid blue;
+    // justify-content: space-between;
+    // text-align: right;
+
+    & article {
+      & h2 {
+        font-size: 25px;
+      }
+      & .footer__size {
+        font-size: 12px;
+      }
+    }
   }
   .Footer .footer__flex {
-      max-width: 834px;
-      margin: 0 auto;
+      // text-align: center;
       display: flex;
-      flex-wrap: nowrap;
       justify-content: center;
+      flex-wrap: wrap;
 
-      text-align: center;
+      padding-left: 500px;
   }
 }
