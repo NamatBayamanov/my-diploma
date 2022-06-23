@@ -50,36 +50,7 @@ function CheckOut() {
             {product.title}
           </Link>{" "}
           {items[product.productId]} ${product.price * items[product.productId]}
-          <div>
-            <button
-              onClick={() =>
-                dispatch({ type: "cart/delete", payload: product.productId })
-              }
-              style={styles}
-            >
-              Delete
-            </button>
-          </div>
-          <div>
-            <button
-              onClick={() =>
-                dispatch({ type: "cart/increment", payload: product.productId })
-              }
-              style={styles}
-            >
-              +
-            </button>
-          </div>
-          <div>
-            <button
-              onClick={() =>
-                dispatch({ type: "cart/decrement", payload: product.productId })
-              }
-              style={styles}
-            >
-              -
-            </button>
-          </div>
+          
         </div>
       );
     });
@@ -102,7 +73,7 @@ function CheckOut() {
     <div className={classes.CheckOut}>
       <div className="container">
         <Header title="CheckOut" image={checkoutImage}> 
-          <span>Please review items in your cart.</span>
+          <span>Please enter your information.</span>
         </Header>
         <div>
           <div className={classes.table}>
@@ -125,10 +96,10 @@ function CheckOut() {
             </lable>
             <lable>
               Phone:
-              <input type="telephone" name="phone"  required/>
+              <input type="text" name="phone"  required/>
             </lable>
             <button>
-              Send
+              Complete the order.
             </button>
           </form>
         </div>
