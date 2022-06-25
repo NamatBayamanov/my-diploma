@@ -25,6 +25,9 @@ function Drawer({ toggle, state }) {
               <Link onClick={toggle} to="/products">Products</Link>
             </li>
             <li>
+              <Link onClick={toggle} to="/categories">Categories</Link>
+            </li>
+            <li>
               <Link onClick={toggle} to="/delivery">Delivery</Link>
             </li>
             <li>
