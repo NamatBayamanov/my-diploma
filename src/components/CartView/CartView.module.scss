@@ -1,0 +1,53 @@
+.CartView {
+
+}
+.CartView {
+  display: block;
+  text-align: center;
+  & div div {
+    border-radius: .5rem;
+    & img {
+      border-radius: .5rem;
+      height: 40vh;
+    }
+  }
+  & span {
+    display: inline-block;
+    font-size: 25px;
+    padding: 1rem 2rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  & .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1xp solid red;
+    font-weight: 555;
+  }
+  font-size: 20px;
+  & .checkout {
+    margin: 1rem;
+    & a {
+      display: inline-block;
+      color: rgb(0, 0, 0);
+      font-size: 28px;
+      transition: all .2s;
+      padding: 1rem 2rem;
+      border: 2px solid black;
+      border-radius: .5rem;
+      background-color: rgb(89, 211, 233);
+    }
+    & a:hover {
+      color: rgb(30, 0, 255);
+      transition: all .2s;
+    }
+  }
+}
+
+.list1:hover {
+  color: rgb(0, 255, 13);
+}
+.list2:hover {
+  color: rgb(0, 72, 255);
+}
