@@ -51,7 +51,7 @@ function ProductItem({product}) {
 
 
         <div className={classes.link}>
-          <Link to={"/products/" + product.productId}> |--Go--| </Link>
+          <Link to={"/products/" + product.productId}> Enter </Link>
         </div>
 
           
