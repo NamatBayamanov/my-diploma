@@ -12,7 +12,6 @@ function Categories() {
             <div className={classes.content}>
               <CategoryList categories={getCategories()}/>
             </div>
-
             
           </div>
         </div>
