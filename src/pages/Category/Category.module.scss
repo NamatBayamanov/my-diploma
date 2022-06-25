@@ -1,0 +1,21 @@
+.Category {
+
+}
+
+.Category {
+  & article {
+    & h2 {
+      color: rgb(0, 0, 0);
+      font-size: 25px;
+      padding: .3rem 1rem;
+    }
+
+    & p {
+      color: rgb(38, 69, 105);
+      font-size: 18px;
+      text-indent: 2rem;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+}
