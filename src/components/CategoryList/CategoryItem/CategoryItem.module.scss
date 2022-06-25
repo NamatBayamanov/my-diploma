@@ -133,11 +133,11 @@
   }
 }
 .CategoryItem h2 {
-  font-size: 15px;
+  font-size: 30px;
   padding: .5rem 1rem;
   text-align: center;
 
-  color: rgb(166, 0, 255);
+  color: rgb(255, 255, 255);
   font-weight: 555;
 
   position: absolute;
@@ -146,6 +146,7 @@
 }
 
 .CategoryItem .rating {
+
   display: flex;
   align-items: center;
   gap: 3px;
