@@ -7,7 +7,7 @@ function Brands() {
       <div className={classes.Brands}>
         <div className={classes.background}>
           <div className="container">
-            <ul>  
+            <ul className={classes.list}>  
               <li>
                 <a href="/">
                   <FaApple/>
