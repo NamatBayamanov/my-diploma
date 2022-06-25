@@ -7,15 +7,14 @@ export const checkout = createAsyncThunk('cart/checkout', async (order, thunkAPI
   return response.data;
 });
 
-function sameInStorage(items) {
-  localStorage.setItem("cartItems", JSON.stringify(items));
-}
+// function sameInStorage(items) {
+//   localStorage.setItem("cartItems", JSON.stringify(items));
+// }
 
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
-    items: {
-    },
+    items: JSON.parse(localStorage.getItem('cartItems') ?? '{}'),
   },
   reducers: {
     add: (store, action) => {
@@ -25,16 +24,16 @@ const cartSlice = createSlice({
       else {
         store.items[action.payload] = 1;
       }
-      sameInStorage(store.items);
+      // sameInStorage(store.items);
     },
-    delete: (store, action) => {
+    remove: (store, action) => {
       delete store.items[action.payload];
-      sameInStorage(store.items);
+      // sameInStorage(store.items);
 
     },
     increment: (store, action) => {
       store.items[action.payload]++;
-      sameInStorage(store.items);
+      // sameInStorage(store.items);
 
     },
     decrement: (store, action) => {
@@ -44,12 +43,12 @@ const cartSlice = createSlice({
       else {
         delete store.items[action.payload];
       }
-      sameInStorage(store.items);
+      // sameInStorage(store.items);
 
     },
-    restore: (store, action) => {
-      store.items = JSON.parse(localStorage.getItem("cartItems") ?? `{}` );
-    },
+    // restore: (store, action) => {
+    //   store.items = JSON.parse(localStorage.getItem("cartItems") ?? `{}` );
+    // },
 
   },
   extraReducers: {
@@ -59,5 +58,6 @@ const cartSlice = createSlice({
     }
   },
 });
+export const { add, remove, increment, decrement } = cartSlice.actions;
 
 export default cartSlice.reducer;
