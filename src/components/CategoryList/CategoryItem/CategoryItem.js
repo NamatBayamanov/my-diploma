@@ -5,9 +5,7 @@ function CategoryItem({ category }) {
   return (
     <>
       <div className={classes.CategoryItem}>
-        <div className={classes.aside}>
-          <aside>{category.novelty}</aside>
-        </div>
+      <div className={classes.backdrop}></div>
 
         <div className={classes.centre}>
           <div className={classes.img__container}>
@@ -17,9 +15,16 @@ function CategoryItem({ category }) {
           </div>
         </div>
 
+        <div className={classes.aside}>
+          <aside>{category.novelty}</aside>
+        </div>
+
         <h2 className={classes.title}>{category.title}</h2>
+
+
         <div className={classes.together}>
-          {/* <div className={classes.rating}>
+
+          <div className={classes.rating}>
           <span>
             <img src={category.rating1} alt="#"/>
           </span>
@@ -38,14 +43,14 @@ function CategoryItem({ category }) {
           <article>
             {category.grade}
           </article>
-        </div> */}
+        </div>
 
           <div className={classes.link}>
             <Link to={"/categories/" + category.categoryId}> |--Go--| </Link>
           </div>
         </div>
 
-        {/* <ul>
+        <ul>
           <li className={classes.price}>
             ${category.price}
           </li>
@@ -54,7 +59,7 @@ function CategoryItem({ category }) {
               {category.cart}
             </Link>
           </li>
-        </ul> */}
+        </ul>
       </div>
     </>
   );
