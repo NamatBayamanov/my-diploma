@@ -108,9 +108,6 @@ const categories = [
 ];
 
 export function getCategories() {
-
-
-
   return categories;
 }
 
