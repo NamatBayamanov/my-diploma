@@ -1,11 +1,12 @@
 import ratingImage from "../assets/rating1.jpg";
 import ratingImage2 from "../assets/rating2.jpg";
 import { BsCart2 } from "react-icons/bs";
-import headphonesImage from "../assets/headphones.jpg";
+import headphonesImage from "../assets/headphones/headyandex.webp";
 
-import casesImage from "../assets/cases.jpg";
-import stickersImage from "../assets/stickers1.jpg";
-import chargingImage from "../assets/charging.jpg";
+// import casesImage from "../assets/samsungGalaxyS10Plus.webp";
+import casesImage from "../assets/cases/y.webp";
+import stickersImage from "../assets/secureglass/s.webp";
+import chargingImage from "../assets/charging/ch.webp";
 
 const categories = [
   {
