@@ -1,0 +1,64 @@
+.CheckoutView {
+
+}
+
+.CheckoutView {
+  & .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 2rem 0;
+  }
+  & .content {
+    & div {
+      img {
+        height: 40vh;
+        border-radius: .5rem;
+      }
+      & span {
+        display: inline-block;
+        font-size: 25px;
+        padding: 1rem 2rem;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      
+    }
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      & label {
+        display: flex;
+        margin: 1rem;
+        & p {
+          font-size: 30px;
+
+        }
+        & input {
+          border: 1px solid black;
+          padding-left: .5rem;
+          margin-left: 1rem;
+          border-radius: .5rem;
+          font-size: 18px;
+        }
+      }
+      & button {
+        margin: 1rem ;
+        background-color: rgb(97, 200, 247);
+        display: inline-block;
+        font-size: 20px;
+        padding: 1.5rem 2.5rem;
+        border-radius: .5rem;
+        transition: all .2s;
+
+      }
+      & button:hover {
+        transition: all .2s;
+        background-color: rgb(43, 173, 233);
+      
+      }
+    }
+  }
+}
