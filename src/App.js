@@ -1,21 +1,22 @@
 
 import Layout from "./components/Layout/Layout";
 import Accessories from "./pages/Stickers/Stickers";
-import Delivery from "./pages/Delivery/Delivery";
+import Delivery from "./pages/Delivery";
 import Headphones from "./pages/Headphones/Headphones";
-import Home from "./pages/Home/Home";
-import Warranty from "./pages/Warranty/Warranty";
+import Home from "./pages/Home";
+import Warranty from "./pages/Warranty";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Products/Product/Product";
-import Category from "./pages/Categories/Category/Category";
+import Category from "./pages/Category/Category";
 import { Route, Routes } from "react-router-dom";
 // import Cases from "./pages/Cases/Cases";
 import SubCategory from "./pages/SubCategory/SubCategory";
-import Cart from "./pages/Cart/Cart";
+import Cart from "./pages/Cart";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import CheckOut from "./pages/CheckOut/CheckOut";
-import Auth from "./pages/Auth/Auth";
+import CheckOut from "./pages/CheckOut";
+import Auth from "./pages/Auth";
+import Categories from "./pages/Categories/Categories";
 // import SubCategories from "./pages/SubCategories/SubCategories";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
 
             <Route path="/products/:productId" element={<Product/>}/>
             
+            <Route path="/categories" element={<Categories/>}/>
             <Route path="/categories/:categoryId" element={<Category/>}/>
 
             <Route path="/categoryId/:subCategoryId" element={<SubCategory/>}/>
