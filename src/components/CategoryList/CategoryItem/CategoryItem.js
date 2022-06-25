@@ -5,7 +5,7 @@ function CategoryItem({ category }) {
   return (
     <>
       <div className={classes.CategoryItem}>
-      <div className={classes.backdrop}></div>
+      <Link to={"/categories/" + category.categoryId} className={classes.backdrop}></Link>
 
         <div className={classes.centre}>
           <div className={classes.img__container}>
@@ -21,8 +21,11 @@ function CategoryItem({ category }) {
 
         <h2 className={classes.title}>{category.title}</h2>
 
+        {/* <div className={classes.link}> */}
+            {/* <Link className={classes.linka} to={"/categories/" + category.categoryId}> Enter </Link> */}
+          {/* </div> */}
 
-        <div className={classes.together}>
+        {/* <div className={classes.together}> */}
 
         {/* <div className={classes.rating}>
           <span>
@@ -45,10 +48,8 @@ function CategoryItem({ category }) {
           </article>
         </div> */}
 
-          <div className={classes.link}>
-            <Link to={"/categories/" + category.categoryId}> |--Go--| </Link>
-          </div>
-        </div>
+          
+        {/* </div> */}
 
         {/* <ul>
           <li className={classes.price}>

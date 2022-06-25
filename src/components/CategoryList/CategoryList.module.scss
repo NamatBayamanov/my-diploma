@@ -1,5 +1,5 @@
 .CategoryList {
-  border: 2px solid red;
+  // border: 2px solid red;
 }
 .CategoryList .content {
   display: grid;
@@ -7,17 +7,28 @@
   grid-template-areas: "item item";
   // grid-template-columns: 80%, 50%;
   // grid-template-rows: 50%, 50%;
-  grid-auto-rows: 115%;
+  grid-auto-rows: 135%;
   grid-auto-columns: 1fr;
   // grid-column: 2fr;
   // grid-row: 2fr;
-  grid-gap: 40px;
+  grid-gap: 30px;
 
   padding-left: 1rem;
   padding-right: 1rem;
 
-  padding-bottom: 40rem;
+  padding-bottom: 48rem;
 
   // min-height: 2550px;
   // overflow: scroll;
+}
+
+@media (max-width: 695px) {
+  .CategoryList {
+    & .content {
+      grid-template-areas: "item";
+      grid-auto-rows: 90%;
+      grid-auto-columns: 100%;
+      padding-bottom: 147rem;
+    }
+  }
 }
