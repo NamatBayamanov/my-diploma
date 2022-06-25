@@ -7,9 +7,9 @@ function Footer() {
       <div className={classes.Footer}>
         <div className={classes.background}>
           <div className="container">
-            <div>
+          
               <div className={classes.content}>
-                <div className={classes.footer__flex}>
+                <div className={classes.footer__flex1}>
                   <article>
                     <h2>Subscribe to news</h2>
                     <p className={classes.footer__size}>
@@ -40,7 +40,7 @@ function Footer() {
                   </p>
                 </footer>
               </div>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -7,6 +7,50 @@
 .Footer {
   color: white;
   & .content {
+    & .footer__flex1 {
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      & article {
+        padding: .5rem ;
+        & h2 {
+          font-size: 30px;
+
+        }
+
+        & .footer__size {
+          font-size: 14px;
+          color: grey;
+        }
+      }
+
+      & .form {
+        & form {
+          & input {
+            // border: 2px solid white;
+            padding: 1rem;
+            color: white;
+          }
+          & input::placeholder {
+            font-size: 20px;
+          }
+
+          & button {
+            color: white;
+            border: 2px solid rgb(89, 89, 93);
+            padding: 1rem 3rem;
+            font-size: 20px;
+            border-radius: .5rem;
+            background-color: rgb(94, 142, 255);
+            transition: all .2s;
+          }
+          & button:hover  {
+            background-color: rgb(99, 255, 94);
+            transition: all .2s;
+          }
+        }
+      }
+    }
   
     & .footer__flex {
       
@@ -63,6 +107,7 @@
       & article {
         & p {
           font-size: 25px;
+          color: grey;
         }
       }
     }
@@ -89,7 +134,7 @@
   .Footer .content {
     display: flex;
     
-    // flex-direction: column;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -108,12 +153,21 @@
       }
     }
   }
+  .Footer .footer__flex1 {
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // flex-wrap: wrap;
+
+    // padding-left: 500px;
+}
   .Footer .footer__flex {
       // text-align: center;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
 
-      padding-left: 500px;
+      // padding-left: 500px;
   }
 }
