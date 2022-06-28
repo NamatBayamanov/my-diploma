@@ -1,4 +1,6 @@
 // import CartLink from "../../CarLink/CarLink";
+
+import { useSelector } from "react-redux";
 import NavItem from "../NavItem/NavItem";
 import classes from "./NavBlack.module.scss";
 
@@ -6,6 +8,9 @@ import classes from "./NavBlack.module.scss";
 
 
 function NavBlack() {
+
+  const isAuthenticated = useSelector(store => store.auth.idToken !== null);
+
   return ( 
     <div className={classes.NavBlack}>
 
@@ -37,6 +42,9 @@ function NavBlack() {
                 <NavItem url="/delivery">Delivery</NavItem>
                 <NavItem url="warranty">Warranty</NavItem>
                 {/* <CartLink/> */}
+
+                { isAuthenticated ? <NavItem url="/signout">Sign out</NavItem> : null }
+      { !isAuthenticated ? <NavItem url="/auth">Sign in</NavItem> : null }
               </article>
             </ul>
           </div>
