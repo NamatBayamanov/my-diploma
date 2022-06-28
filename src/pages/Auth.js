@@ -1,10 +1,13 @@
 
 import { useDispatch } from "react-redux";
 import { start } from "../redux/slices/authSlice/authSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function Auth() {
 
     const dispatch = useDispatch();
+
+    const navigate = useNavigate();
 
     function onAuthStart(event) {
     event.preventDefault();
@@ -17,6 +20,8 @@ export default function Auth() {
         method: event.nativeEvent.submitter.innerText === "Sign up" ? 'signup' : 'signin',
         })
     );
+
+    navigate('/');
 }
     return (
     <form onSubmit={onAuthStart}>
