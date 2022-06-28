@@ -13,6 +13,8 @@ function SubCategoryItem({subCategory}) {
   const category = getCategory(params.categoryid);
 
 
+  console.log(subCategory)
+
 
   return ( 
     <>  
@@ -22,10 +24,10 @@ function SubCategoryItem({subCategory}) {
           {subCategory.title}
         </h2>
         <div className={classes.img__container}>
-          <img src={subCategory.image} alt="#"/>
+          <img src={subCategory.image} alt="#"/>   
         </div>
-        <Link to={params.categoryId + subCategory.subCategoryId}>
-          To move
+        <Link to={`/categories/category/${subCategory.subCategoryId}`}>
+          {subCategory.title}
         </Link>
 
       </div>
