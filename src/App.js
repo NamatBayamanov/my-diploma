@@ -30,7 +30,7 @@ function App() {
 
   console.log(params)
 
-  const category = getCategory(params.categoryid);
+  // const category = getCategory(params.categoryid);
 
   // const id = {...category}
 

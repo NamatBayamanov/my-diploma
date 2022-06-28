@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { getCategory } from "../../../data/Categories";
+// import { getCategory } from "../../../data/Categories";
 import classes from "./SubCategoryItem.module.scss";
 
 
