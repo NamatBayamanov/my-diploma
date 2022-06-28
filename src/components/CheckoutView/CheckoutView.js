@@ -5,8 +5,10 @@ import Header from "../../components/Header/Header";
 import { Link, useNavigate } from "react-router-dom";
 import checkoutImage from "../../assets/checkout/checkout.webp";
 import { checkout } from "../../redux/slices/cartSlice/cartSlice";
+import { useEffect } from "react";
 function CheckoutView() {
   const navigate = useNavigate();
+
 
   const styles2 = {
     display: "flex",
@@ -21,7 +23,10 @@ function CheckoutView() {
     color: "black",
   };
 
-  const items = useSelector((store) => store.cart.items);
+  const { items, localId } = useSelector(store => ({
+    items: store.cart.items,
+    localId: store.auth.localId
+  }));
 
   const dispatch = useDispatch();
 
@@ -47,11 +52,26 @@ function CheckoutView() {
     output = "No items in cart";
   }
 
+
+  useEffect(() => {
+    if (!localId) {
+      navigate('/auth');
+    }
+  }, [localId, navigate]);
+
   function onCheckout(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    dispatch(checkout(Object.fromEntries(formData.entries())));
+    // dispatch(checkout(Object.fromEntries(formData.entries())));
+
+
+
+    dispatch(checkout({
+      localId: localId,
+      items: items,
+      ...Object.fromEntries(formData.entries()),
+    }));
     navigate("/");
   }
 
