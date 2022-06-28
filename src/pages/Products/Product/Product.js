@@ -7,7 +7,13 @@ import classes from "./Product.module.scss";
 
 function Product() {
   const params = useParams();
+
+  console.log(params);
+
+
   const product = getProduct(params.productId);
+
+  console.log(product)
   return ( 
     <>
       <div className={classes.Product}>
