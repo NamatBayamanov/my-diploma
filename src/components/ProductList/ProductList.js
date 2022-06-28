@@ -16,6 +16,9 @@ function ProductList({products}) {
           <div className="container">
             <div className={classes.content}>
               {productItems}
+              {/* {productItems}
+              {productItems}
+              {productItems} */}
             </div>
             
           </div>
