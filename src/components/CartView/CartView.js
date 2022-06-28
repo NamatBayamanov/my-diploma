@@ -7,6 +7,8 @@ import { useDispatch } from "react-redux";
 import classes from "./CartView.module.scss";
 import { decrement, increment, remove } from "../../redux/slices/cartSlice/cartSlice";
 function CartView() {
+
+  
   const styles = {
     display: "inline-block",
     paddingTop: 0.5 + "rem",
