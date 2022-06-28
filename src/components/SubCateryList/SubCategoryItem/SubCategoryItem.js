@@ -10,7 +10,7 @@ function SubCategoryItem({subCategory}) {
 
   console.log(params);
 
-  const category = getCategory(params.categoryid);
+  // const category = getCategory(params.categoryid);
 
 
   console.log(subCategory)

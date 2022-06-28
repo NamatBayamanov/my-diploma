@@ -19,7 +19,7 @@ function SubCategory() {
           
           <div className={classes.content}>
             <div className={classes.img__container}>
-              <img width="391" height="500" src={subCategory.image} />
+              <img width="391" height="500" src={subCategory.image} alt="#" />
               <div className={classes.backdrop}></div>
 
               <h2>{subCategory.title}</h2>
