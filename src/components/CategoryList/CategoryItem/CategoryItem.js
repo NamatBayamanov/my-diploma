@@ -1,7 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import classes from "./CategoryItem.module.scss";
 
 function CategoryItem({ category }) {
+
+  const params = useParams();
+
+  console.log("P" + params);
+
+
   return (
     <>
       <div className={classes.CategoryItem}>
