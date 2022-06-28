@@ -26,6 +26,15 @@ const cartSlice = createSlice({
       }
       // sameInStorage(store.items);
     },
+    // add2: (store, action) => {
+    //   if (store.items[action.payload]) {
+    //     store.items[action.payload]++;
+    //   }
+    //   else {
+    //     store.items[action.payload] = 1;
+    //   }
+    //   // sameInStorage(store.items);
+    // },
     remove: (store, action) => {
       delete store.items[action.payload];
       // sameInStorage(store.items);
