@@ -16,6 +16,9 @@ function SubCategoryList({subCategories}) {
       <div className={classes.SubCategoryList}>
         <div className={classes.background}>
           <div className="container">
+          <h1>
+            All categories
+          </h1>
             <div className={classes.content}>
                 {subCategoryItems}
             </div>
