@@ -18,7 +18,9 @@ import CheckOut from "./pages/CheckOut";
 import Auth from "./pages/Auth";
 import Categories from "./pages/Categories/Categories";
 // import Subcategoryy from "./pages/Subcategoryy";
-import { getCategory } from "./data/Categories";
+
+// import { getCategory } from "./data/Categories";
+
 // import { getSubCategory } from "./data/SubCategories";
 import SignOut from "./pages/SingOut";
 // import SubCategories from "./pages/SubCategories/SubCategories";
