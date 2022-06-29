@@ -28,8 +28,13 @@ import chargingImage from "../assets/charging/ch.webp";
 import stickersImage from "../assets/secureglass/s.webp";
 import headphonesImage from "../assets/headphones/headyandex.webp";
 import casesImage from "../assets/cases/y.webp";
-
-
+import i6 from "../assets/apple/i6.webp";
+import i6s from "../assets/apple/i6s.webp";
+import i7 from "../assets/apple/i7.webp";
+import i7s from "../assets/apple/i7s.webp";
+import i7plus from "../assets/apple/i7plus.webp";
+import i8 from "../assets/apple/i8.webp";
+import i8s from "../assets/apple/i8s.webp";
 
 const products = [
   {
@@ -422,7 +427,6 @@ const products = [
     price: "849",
     cart: <BsCart2/>,
   },
-
   {
     action: "Novelty",
     image: chargingImage,
@@ -447,7 +451,6 @@ const products = [
 
     description: "Fast Charging is a term frequently used to market chargers and devices capable of charging faster than the current charging standard (5 Watts).",
   },
-
   {
     action: "Novelty",
     image: stickersImage,
@@ -473,7 +476,7 @@ const products = [
     description: "A screen protector is an additional sheet of material—commonly polyurethane or laminated glass—that can be attached to the screen of an electronic device and protect it against physical damage.",
   },
   {
-    novelty: "Novelty",
+    action: "Novelty",
     image: headphonesImage,
     title: "Comfortable headphone",
     rating1: ratingImage,
@@ -497,7 +500,7 @@ const products = [
     description: "Headphones are a pair of small loudspeaker drivers worn on or around the head over a user's ears. They are electroacoustic transducers, which convert an electrical signal to a corresponding sound.",
   },
   {
-    novelty: "Novelty",
+    action: "Novelty",
     image: casesImage,
     title: "Leather case",
     rating1: ratingImage,
@@ -520,7 +523,120 @@ const products = [
     description: "Smartphone cases are the most popular accessories for smartphones. They protect phones from scratches, dings, and drops while adding a layer of style.",
   },
   {
-    
+    action: "Apple c...",
+    title: "iPhone 6",
+    description: "The iPhone 6 is a smartphone designed and marketed by Apple Inc. It was announced along with the larger iPhone 6 Plus on September 9, 2014 as the latest addition to the iPhone series, and released on September 19, 2014. The iPhone 6 and 6 Plus jointly serve as successors to the iPhone 5C and 5S, and were predeceessors to the iPhone 6s and 6s Plus.",
+    image: i6,
+
+    rating1: ratingImage,
+    rating2: ratingImage,
+    rating3: ratingImage,
+    rating4: ratingImage,
+    rating5: ratingImage2,
+    grade: "74",
+    productId: "iphone-6",
+
+    price: "685",
+    cart: <BsCart2/>,
+  },
+  {
+    action: "Apple c...",
+    title: "iPhone 6s",
+    description: "The iPhone 6 is a smartphone designed and marketed by Apple Inc. It was announced along with the larger iPhone 6 Plus on September 9, 2014 as the latest addition to the iPhone series, and released on September 19, 2014. The iPhone 6 and 6 Plus jointly serve as successors to the iPhone 5C and 5S, and were predeceessors to the iPhone 6s and 6s Plus.",
+    image: i6s,
+    productId: "iphone-6s",
+
+    rating1: ratingImage,
+    rating2: ratingImage,
+    rating3: ratingImage,
+    rating4: ratingImage,
+    rating5: ratingImage2,
+    grade: "74",
+
+    price: "736",
+    cart: <BsCart2/>,
+  },
+  {
+    description: "The iPhone 7 and iPhone 7 Plus are smartphones designed, developed, and marketed by Apple Inc. They are the tenth generation of the iPhone. They were announced on September 7, 2016, at the Bill Graham Civic Auditorium in San Francisco by Apple CEO Tim Cook.",
+
+    productId: "iphone-7",
+    title: "iPhone 7",
+    image: i7,
+    rating1: ratingImage,
+    rating2: ratingImage,
+    rating3: ratingImage,
+    rating4: ratingImage,
+    rating5: ratingImage2,
+    grade: "74",
+    action: "Apple c...",
+    price: "838",
+    cart: <BsCart2/>,
+  },
+  {
+    description: "The iPhone 7 and iPhone 7 Plus are smartphones designed, developed, and marketed by Apple Inc. They are the tenth generation of the iPhone. They were announced on September 7, 2016, at the Bill Graham Civic Auditorium in San Francisco by Apple CEO Tim Cook.",
+
+    productId: "iphone-7s",
+    title: "iPhone 7s",
+    image: i7s,
+    rating1: ratingImage,
+    rating2: ratingImage,
+    rating3: ratingImage,
+    rating4: ratingImage,
+    rating5: ratingImage2,
+    grade: "74",
+    action: "Apple c...",
+    price: "963",
+    cart: <BsCart2/>,
+  },
+  {
+    description: "The iPhone 7 and iPhone 7 Plus are smartphones designed, developed, and marketed by Apple Inc. They are the tenth generation of the iPhone. They were announced on September 7, 2016, at the Bill Graham Civic Auditorium in San Francisco by Apple CEO Tim Cook.",
+
+    productId: "iphone-7plus",
+    title: "iPhone 7plus",
+    image: i7plus,
+    rating1: ratingImage,
+    rating2: ratingImage,
+    rating3: ratingImage,
+    rating4: ratingImage,
+    rating5: ratingImage2,
+    grade: "74",
+    action: "Apple c...",
+    price: "1120",
+    cart: <BsCart2/>,
+  },
+  {
+    description: "The iPhone 8 and iPhone 8 Plus are smartphones designed, developed, and marketed by Apple Inc. They make up the 11th generation of the iPhone. The iPhone 8 was released on September 22, 2017, succeeding the iPhone 7 and iPhone 7 Plus[8] and preceding the iPhone X.",
+
+    productId: "iphone-8",
+    title: "iPhone 8",
+    image: i8,
+    rating1: ratingImage,
+    rating2: ratingImage,
+    rating3: ratingImage,
+    rating4: ratingImage,
+    rating5: ratingImage2,
+    grade: "74",
+    action: "Apple c...",
+    price: "1231",
+    cart: <BsCart2/>,
+
+  },
+  {
+    description: "The iPhone 8 and iPhone 8 Plus are smartphones designed, developed, and marketed by Apple Inc. They make up the 11th generation of the iPhone. The iPhone 8 was released on September 22, 2017, succeeding the iPhone 7 and iPhone 7 Plus[8] and preceding the iPhone X.",
+
+    productId: "iphone-8s",
+    title: "iPhone 8s",
+    image: i8s,
+    rating1: ratingImage,
+    rating2: ratingImage,
+    rating3: ratingImage,
+    rating4: ratingImage,
+    rating5: ratingImage2,
+    grade: "74",
+    action: "Apple c...",
+    price: "1336",
+    cart: <BsCart2/>,
+
   },
 ];
 
