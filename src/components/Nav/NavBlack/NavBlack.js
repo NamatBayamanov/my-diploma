@@ -38,7 +38,7 @@ function NavBlack() {
               </div>
 
               <article className={classes.collect2}>
-              <NavItem url="/categories">Categories</NavItem>
+              {/* <NavItem url="/categories">Categories</NavItem> */}
                 <NavItem url="/delivery">Delivery</NavItem>
                 <NavItem url="warranty">Warranty</NavItem>
                 {/* <CartLink/> */}
