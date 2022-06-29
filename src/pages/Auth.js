@@ -2,10 +2,13 @@
 import { useDispatch } from "react-redux";
 import { start } from "../redux/slices/authSlice/authSlice";
 import { useNavigate } from "react-router-dom";
-
+import { useSelector } from "react-redux";
 export default function Auth() {
 
     const dispatch = useDispatch();
+
+    const { error, localId } = useSelector(store => store.auth);
+
 
     const navigate = useNavigate();
 
@@ -21,10 +24,23 @@ export default function Auth() {
         })
     );
 
+    // navigate('/');
+}
+
+
+if (localId !== null) {
     navigate('/');
 }
+
+let errorOutput = null;
+    if (error) {
+    errorOutput = <strong style={{ color: "red" }}>{error}</strong>
+}
+
+
     return (
     <form onSubmit={onAuthStart}>
+        {errorOutput}
         <label>
         Email:
         <input type="email" name="email" />
