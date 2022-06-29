@@ -8,6 +8,11 @@ import viewImage from "../../assets/view.jpg";
 import viewImage2 from "../../assets/view2.jpg";
 import viewImage3 from "../../assets/view3.jpg";
 import viewImage4 from "../../assets/view4.jpg";
+
+
+import HomeViewImg from "./HomeViewImg/HomeViewImg";
+
+import cart from "../../assets/cart/cart.webp";
 // import CategoryList from "../CategoryList/CategoryList";
 // import { getCategories } from "../../data/Categories";
 
@@ -56,6 +61,9 @@ function HomeView() {
 
             
             {/* <CategoryList categories={getCategories()}/> */}
+
+            <HomeViewImg img={cart}/>
+            <HomeViewImg img={cart}/>
           </div>
         </div>
 
