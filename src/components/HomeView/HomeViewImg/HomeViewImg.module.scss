@@ -20,6 +20,8 @@
     background-color: rgba(255, 255, 255, 0);
     z-index: 0;
     padding: .5rem;
+    transition: all .2;
+
   }
   & .welcome {
     position: absolute;
@@ -43,6 +45,7 @@
     bottom: 6px;
     background-color: rgba(0, 0, 0, 0.273);
     z-index: 0;
+    transition: all .2;
   }
   & .welcome {
     transition: all .3s;
