@@ -22,18 +22,18 @@ function Header({image, children, title, text, image2, image3}) {
           <div className="container">
             <article className={classes.content}>
               <div className={classes.img__container}>
-                <img src={image} alt="#"/>
+                {/* <img src={image} alt="#"/> */}
               </div>
               <p>
                 <p>
                 {children}
                 </p>
-                <span>
+                {/* <span>
                   &nbsp;
-                </span>
-                <aside>
+                </span> */}
+                {/* <aside>
                   
-                </aside>
+                </aside> */}
               </p>
             </article>
 
