@@ -33,6 +33,7 @@ const authSlice = createSlice({
     idToken: null,
     error: null,
     loading: false,
+    email: null,
   },
   reducers: {
     init: (state, action) => {
@@ -44,7 +45,9 @@ const authSlice = createSlice({
     success: (state, action) => {
       state.localId = action.payload.localId;
       state.idToken = action.payload.idToken;
+      state.email = action.payload;
       state.loading = false;
+      
     },
     loading: (state, action) => {
       state.loading = true;
