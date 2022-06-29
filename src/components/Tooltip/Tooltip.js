@@ -10,7 +10,7 @@ function Tooltip({toggle}) {
 
     <div className={classes.Tooltip}>
       <Nav toggle={toggle}/>
-      <Brands/>
+      {/* <Brands/> */}
       {/* <CartLink/> */}
       
     </div>
