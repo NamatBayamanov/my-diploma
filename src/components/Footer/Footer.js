@@ -16,13 +16,13 @@ function Footer() {
                       Be the first to know about new products and special offers
                     </p>
                   </article>
-
+{/* 
                   <div className={classes.form}>
                     <form>
                       <input type="text" placeholder="Email*" />
                       <button>Subscribe</button>
                     </form>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className={classes.footer__flex}>
