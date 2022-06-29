@@ -2,7 +2,11 @@
 import { Link } from "react-router-dom";
 import classes from "./Drawer.module.scss";
 
+import { useSelector } from "react-redux";
+
 function Drawer({ toggle, state }) {
+
+  const isAuthenticated = useSelector(store => store.auth.idToken !== null);
 
   return (
     <div className={classes.Drawer}>
@@ -25,7 +29,8 @@ function Drawer({ toggle, state }) {
               <Link onClick={toggle} to="/products">Products</Link>
             </li>
             <li>
-              <Link onClick={toggle} to="/categories">Categories</Link>
+            { isAuthenticated ? <Link to="/signout" onClick={toggle}>Sign out</Link> : null }
+      { !isAuthenticated ? <Link to="/auth" onClick={toggle}>Sign in</Link> : null }
             </li>
             <li>
               <Link onClick={toggle} to="/delivery">Delivery</Link>
