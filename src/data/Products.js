@@ -472,7 +472,6 @@ const products = [
 
     description: "A screen protector is an additional sheet of material—commonly polyurethane or laminated glass—that can be attached to the screen of an electronic device and protect it against physical damage.",
   },
-
   {
     novelty: "Novelty",
     image: headphonesImage,
@@ -497,7 +496,6 @@ const products = [
 
     description: "Headphones are a pair of small loudspeaker drivers worn on or around the head over a user's ears. They are electroacoustic transducers, which convert an electrical signal to a corresponding sound.",
   },
-
   {
     novelty: "Novelty",
     image: casesImage,
@@ -520,6 +518,9 @@ const products = [
 
 
     description: "Smartphone cases are the most popular accessories for smartphones. They protect phones from scratches, dings, and drops while adding a layer of style.",
+  },
+  {
+    
   },
 ];
 
