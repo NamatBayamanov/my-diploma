@@ -20,6 +20,7 @@ function DeliveryView() {
         <div className={classes.background}>
           <div className="container">
             <div className={classes.content}>
+            <div className={classes.content}>
               <h2>Shipping and payment</h2>
               <h3>Delivery methods</h3>
 
@@ -148,6 +149,8 @@ function DeliveryView() {
                 </p>
               </article>
             </div>
+            </div>
+            
           </div>
         </div>
       </div>
