@@ -35,7 +35,7 @@ function Footer() {
                 </div>
                 <footer>
                   <p>
-                    2017-2021 © Mobila.shop Online store for smartphones and
+                    2017-2022 © Mobila.shop Online store for smartphones and
                     accessories. All rights reserved.
                   </p>
                 </footer>
