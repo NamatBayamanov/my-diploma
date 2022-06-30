@@ -62,9 +62,9 @@ function NavWhite({toggle}) {
                     {/* <a href="/">
                       <FaUserAlt />
                     </a> */}
-                    <a href="/products">
+                    <Link to="/products">
                       <FaHeart />
-                    </a>
+                    </Link>
                     {/* <a href="/">
                       <FaShoppingCart />
                     </a> */}
