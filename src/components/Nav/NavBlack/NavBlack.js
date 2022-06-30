@@ -1,6 +1,7 @@
 // import CartLink from "../../CarLink/CarLink";
 
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import NavItem from "../NavItem/NavItem";
 import classes from "./NavBlack.module.scss";
 
@@ -47,7 +48,10 @@ function NavBlack() {
 
                 { isAuthenticated ? <NavItem url="/signout">Sign out</NavItem> : null }
       { !isAuthenticated ? <NavItem url="/auth">Sign in</NavItem> : null }
-      <NavItem url="/history">Orders</NavItem>
+
+      {isAuthenticated ? <NavItem url='/history' className='btn btn-outline-dark ms-2'>Orders</NavItem> : null}
+
+      {/* <NavItem url="/history">Orders</NavItem> */}
               </article>
             </ul>
           </div>
