@@ -32,6 +32,10 @@ function Drawer({ toggle, state }) {
             { isAuthenticated ? <Link to="/signout" onClick={toggle}>Sign out</Link> : null }
       { !isAuthenticated ? <Link to="/auth" onClick={toggle}>Sign in</Link> : null }
             </li>
+            <li>
+            {isAuthenticated ? <Link to='/history' className='btn btn-outline-dark ms-2' onClick={toggle}>Orders</Link> : null}
+
+            </li>
             {/* <li>
               <Link onClick={toggle} to="/delivery">Delivery</Link>
             </li>
