@@ -1,0 +1,135 @@
+.Headphones {
+
+}
+.Headphones .background {
+  // height: 75vh;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.Headphones .content {
+  // border: 3px solid blue;
+
+  position: relative;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 72vh;
+
+
+
+  //overflow: hidden;
+}
+.Headphones article div {
+  max-width: 980px;
+  
+
+}
+.Headphones article div img {
+  display: none;
+}
+.Headphones article p p {
+  display: none;
+}
+
+.Headphones article p {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  // border: 2px solid rgb(255, 0, 0);
+
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  perspective: 1000px;
+}
+
+.Headphones article p:hover span {
+  transform: rotateY(360deg);
+  
+}
+.Headphones article p:hover aside {
+  transform: rotateY(180deg);
+  
+}
+
+
+
+
+.Headphones article p span {
+  display: block;
+  background: url(../../assets/smile2.jpg);
+  width: 100%;
+  height: 70vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  // object-position: center;
+  // object-fit: cover;
+
+  position: absolute;
+  // top: 0;
+  // left: 0;
+
+  // right: 0;
+  // bottom: 0;
+
+  
+
+  backface-visibility: hidden;
+
+  transition: all 1s;
+}
+.Headphones article p aside {
+  display: block;
+  background: url(../../assets/headphones.jpg);
+  width: 100%;
+  height: 71vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+  
+
+  transition: all 1s;
+
+
+  backface-visibility: hidden;
+
+  
+}
+
+// .Headphones article p span:hover {
+//   transform: rotateY(-180deg);
+// }
+
+// .Headphones article p aside:hover {
+//   transform: rotateY(180deg);
+// }
+
+
+
+
+
