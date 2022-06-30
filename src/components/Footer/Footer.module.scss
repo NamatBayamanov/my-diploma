@@ -6,9 +6,15 @@
 }
 .Footer {
   color: white;
+  
   & .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
     & .footer__flex1 {
       padding: 1.5rem 0;
+      
       display: flex;
       justify-content: space-between;
       & article {
@@ -19,7 +25,7 @@
         }
 
         & .footer__size {
-          font-size: 14px;
+          font-size: 24px;
           color: grey;
         }
       }
@@ -53,16 +59,17 @@
     }
   
     & .footer__flex {
-      
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      // flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
 
       padding: 1rem;
+      
       & article {
-        & h2 {
-          font-size: 30px;
+        & p {
+          font-size: 23px;
+          padding-top: 15px;
         }
         & .footer__size {
           font-size: 15px;
@@ -106,7 +113,7 @@
       }
       & article {
         & p {
-          font-size: 25px;
+          font-size: 23px;
           color: grey;
         }
       }
