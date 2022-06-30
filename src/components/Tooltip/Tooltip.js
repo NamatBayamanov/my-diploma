@@ -1,4 +1,4 @@
-import Brands from "../Brands/Brands";
+// import Brands from "../Brands/Brands";
 // import CartLink from "../CarLink/CarLink";
 import Nav from "../Nav/Nav";
 import classes from "./Tooltip.module.scss";
