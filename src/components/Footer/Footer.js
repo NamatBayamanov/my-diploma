@@ -11,12 +11,12 @@ function Footer() {
               <div className={classes.content}>
                 <div className={classes.footer__flex1}>
                   <article>
-                    <h2>Subscribe to news</h2>
+                    {/* <h2>Subscribe to news</h2> */}
                     <p className={classes.footer__size}>
                       Be the first to know about new products and special offers
                     </p>
                   </article>
-{/* 
+                  {/* 
                   <div className={classes.form}>
                     <form>
                       <input type="text" placeholder="Email*" />
