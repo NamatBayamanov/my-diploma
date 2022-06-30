@@ -1,7 +1,7 @@
 // import CartLink from "../../CarLink/CarLink";
 
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import NavItem from "../NavItem/NavItem";
 import classes from "./NavBlack.module.scss";
 
