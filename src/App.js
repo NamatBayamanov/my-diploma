@@ -24,6 +24,7 @@ import CheckOut from "./pages/CheckOut";
 import SignOut from "./pages/SingOut";
 import History from "./pages/History";
 import Auth from "./pages/Auth";
+import Orders from "./pages/Orders";
 // import SubCategories from "./pages/SubCategories/SubCategories";
 
 
@@ -78,7 +79,8 @@ function App() {
             <Route path="/checkout" element={<CheckOut />} />
 
             <Route path="/auth" element={<Auth />} />
-            <Route path="/history" element={<History />} />
+            {/* <Route path="/history" element={<History />} /> */}
+            <Route path="/history" element={<Orders />} />
             <Route path="/signout" element={<SignOut />} />
           </Routes>
         </Layout>
