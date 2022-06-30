@@ -22,7 +22,7 @@ import CheckOut from "./pages/CheckOut";
 
 // import { getSubCategory } from "./data/SubCategories";
 import SignOut from "./pages/SingOut";
-import History from "./pages/History";
+// import History from "./pages/History";
 import Auth from "./pages/Auth";
 import Orders from "./pages/Orders";
 // import SubCategories from "./pages/SubCategories/SubCategories";
