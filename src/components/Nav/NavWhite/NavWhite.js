@@ -2,14 +2,18 @@ import Logo from "../../ui/Logo/Logo";
 import NavToggle from "../NavToggle/NavToggle";
 import classes from "./NavWhite.module.scss";
 
-import { FaSistrix } from "react-icons/fa";
+import { FaRegHandPointDown } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 // import { FaShoppingCart } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import CartLink from "../../CarLink/CarLink";
+import { Link } from "react-router-dom";
+import {useSelector} from "react-redux";
 
 function NavWhite({toggle}) {
+  const isAuthenticated = useSelector(store => store.auth.idToken !== null);
+  const sets = [];
   return ( 
     <div className={classes.NavWhite}>
       <article className={classes.boundless__white}>
@@ -36,23 +40,29 @@ function NavWhite({toggle}) {
 
                 <li>
                   <div className={classes.bottom__borders}>
+                    <div className={classes.backdrop}></div>
                     <input
                       type="text"
-                      placeholder="Search"
-                      aria-label="Search"
+                      placeholder="Better prices"
+                      value={sets}
                     />
                     <button>
-                      <FaSistrix />
+                      {/* <FaMedium/> */}
+                      <FaRegHandPointDown/>
                     </button>
                   </div>
                 </li>
 
                 <li>
                   <div className={classes.user}>
-                    <a href="/">
+
+                  { isAuthenticated ? <Link to="/signout"><FaUserAlt /></Link> : null }
+      { !isAuthenticated ? <Link to="/auth"><FaUserAlt /></Link> : null }
+
+                    {/* <a href="/">
                       <FaUserAlt />
-                    </a>
-                    <a href="/">
+                    </a> */}
+                    <a href="/products">
                       <FaHeart />
                     </a>
                     {/* <a href="/">
