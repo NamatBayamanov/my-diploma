@@ -40,12 +40,14 @@ function NavBlack() {
               <article className={classes.collect2}>
               {/* <NavItem url="/categories">Categories</NavItem> */}
               <NavItem url="/products">Products</NavItem>
+              
                 {/* <NavItem url="/delivery">Delivery</NavItem> */}
                 {/* <NavItem url="warranty">Warranty</NavItem> */}
                 {/* <CartLink/> */}
 
                 { isAuthenticated ? <NavItem url="/signout">Sign out</NavItem> : null }
       { !isAuthenticated ? <NavItem url="/auth">Sign in</NavItem> : null }
+      <NavItem url="/history">Orders</NavItem>
               </article>
             </ul>
           </div>
