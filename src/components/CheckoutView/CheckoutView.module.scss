@@ -25,15 +25,20 @@
     }
 
     & form {
+      padding: 1.5rem 0;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      
+      align-items: left;
+      border: 1px solid black;
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: white;
       & label {
         display: flex;
         margin: 1rem;
+        align-items: center;
         & p {
-          font-size: 30px;
+          font-size: 25px;
 
         }
         & input {
@@ -42,6 +47,8 @@
           margin-left: 1rem;
           border-radius: .5rem;
           font-size: 18px;
+          padding-top: .5rem;
+          padding-bottom: .5rem;
         }
       }
       & button {
